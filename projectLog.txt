@@ -17,6 +17,20 @@ November 14th - project meeting
     add page will need to have tags able to be added
 
     look - similar to pintrest for cake pictures - all the same width but varying height
+    
+    COLOR SCHEME: https://designschool.canva.com/blog/website-color-schemes/
+        number 26 - antique and clean
+        Colors: #B56357   Rust
+                #B4DBC0 - MINT
+                #EAE3EA - SLATE
+                #A7B3A5 - SEA FOAM
+    FONTS
+        Script: https://fonts.google.com/specimen/Lobster
+        Print: https://fonts.google.com/specimen/Poppins
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Poppins" rel="stylesheet">
+       
+        font-family: 'Lobster', cursive;
+        font-family: 'Poppins', sans-serif;
 
     TO DO BEFORE FRIDAY NOV 17th:
         Each page mockup:
