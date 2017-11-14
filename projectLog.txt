@@ -1,0 +1,26 @@
+November 14th - project meeting
+    Everyone present, started planning look of Cake Catalog!
+    Pages: Home, about us, add, cake cart *do we want to add a recipe multiplier?
+
+    Tags for filtering recipes:
+        Gluten Free
+        Dairy free
+        vegan
+
+        cake type - chocolate, vanilla, cheesecake, other
+
+        serving number - enter number
+        preptime - min to max time
+        cook time - min to max time
+
+    Tags will be available on the homepage and the Cake cart pages, hidden on the about us page, and on the  add page
+    add page will need to have tags able to be added
+
+    look - similar to pintrest for cake pictures - all the same width but varying height
+
+    TO DO BEFORE FRIDAY NOV 17th:
+        Each page mockup:
+        home - Amanda C
+        about - Talia
+        add - Amanda D
+        cake cart - Carly
