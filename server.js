@@ -1,6 +1,3 @@
-/*
- * Write your server code in this file.
- */
 var http = require('http');
 var fs = require('fs');
 var html = fs.readFileSync('./public/index.html',"utf8");
