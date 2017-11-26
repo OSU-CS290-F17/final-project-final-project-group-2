@@ -19,7 +19,7 @@ header{
 	padding: 5px;
 	height: 128px;
 	width: 128px;
-	border-width: 3px;
+	border-width: 2px;
 	border-style: dashed;
 	border-color: black;
 	background-color: purple;
@@ -40,4 +40,43 @@ header{
 	border-width: 2px;
 	border-color: black;
 	border-radius: 2px;
+}
+
+.filter{
+  width: 225px;
+  height: 375px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 2px;
+  background-color: rgba(236, 221, 245);
+	border-width: 2px;
+  display: flex;
+}
+
+h2{
+  line-height: 0px;
+  padding-left: 5px;
+}
+
+.filter-input-box{
+  padding: 5px;
+  display: flex;
+  max-width:220px;
+}
+
+.filter-input{
+  margin: 0px 5px 5px 5px;
+  height: 20px;
+  display: flex;
+  flex-grow:1;
+}
+
+#filter-min-price, #filter-max-price{
+  width: 75px;
+}
+
+fieldset{
+  line-height: 20px;
+  border: 1px solid rgb(100, 20, 122);
+  width: 185px;
 }
