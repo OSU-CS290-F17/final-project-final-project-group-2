@@ -7,5 +7,14 @@
     "prep": 45,
     "cook": 30,
     "photoURL": "https://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/Favorite-Coconut-Cake_EXPS_CWFM17_39030_B11_02_5b.jpg"
+  },
+  "LazyDaisy": {
+    "title": "Lasy Daisy Cake",
+    "type": "other",
+    "dietaryTag": "",
+    "serves": 8,
+    "prep": 45,
+    "cook": 30,
+    "photoURL": "https://i.pinimg.com/236x/7b/2e/24/7b2e24bebd6a323913b43f47a8c9edac--moist-vanilla-cake-daisy-cakes.jpg"
   }
 }

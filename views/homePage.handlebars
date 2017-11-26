@@ -1,10 +1,12 @@
 <main class="content">
 
-  {{> filter}}
+  {{> filterBox}}
 
   <section id="posts">
 
-  {{> cakePost cakesArray}}
+  {{#each cakesArray}}
+    {{> cakePost}}
+  {{/each}}
 
   </section>
 
