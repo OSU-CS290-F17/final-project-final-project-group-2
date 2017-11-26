@@ -1,3 +1,13 @@
+/* Colors:
+Dark Purple: rgb(100, 20, 122)
+Grey: rgb(192, 192, 192)
+Black: rgb(0, 0, 0)
+White: rgb(255, 255, 255)
+Cream: rgb(254, 241, 232)
+Light Grey: rgb(234, 234, 234)
+Light Purple: rgb(236, 221, 245)
+*/
+
 header{
 	background-color: #fff6eb;
 	align-items: top;
@@ -23,4 +33,11 @@ header{
 	text-decoration: underline;
 	background-color: pink;
 
+}
+
+.cake-post-container{
+	height: 150px;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 2px;
 }

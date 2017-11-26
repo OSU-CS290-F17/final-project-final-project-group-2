@@ -1,0 +1,56 @@
+<aside class="filter-container">
+
+  <h2>Search Cakes</h2>
+
+  <div class="filter-input-box">
+    <label for="filter-cake-type">Cake Type</label>
+    <select id="filter-cake-type" class="filter-input" name="filter-cake-type">
+      <option selected value="">Any</option>
+      <option>Carrot</option>
+      <option>Cheesecake</option>
+      <option>Chocolate</option>
+      <option>Coffee</option>
+      <option>Fruity</option>
+      <option>Vanilla</option>
+    </select>
+  </div>
+
+  <div class="filter-input-box">
+    <fieldset id="filter-dietary-tags" class="filter-fieldset">
+      <legend>Dietary Tags</legend>
+      <div>
+        <input type="checkbox" name="filter-dietary-tags" id="filter-dietary-tags-dairy-free" value="dairy-free">
+        <label for="filter-dietary-tags-dairy-free">Dairy Free</label>
+      </div>
+      <div>
+        <input type="checkbox" name="filter-dietary-tags" id="filter-dietary-tags-gluten-free" value="gluten-free">
+        <label for="filter-dietary-tags-gluten-free">Gluten Free</label>
+      </div>
+      <div>
+        <input type="checkbox" name="filter-dietary-tags" id="filter-dietary-tags-vegan" value="vegan">
+        <label for="filter-dietary-tags-vegan">Vegan</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="filter-input-box">
+    <label for="filter-min-serves" class="filter-input-label">Serves</label>
+    <input type="number" name="filter-min-serves" id="filter-min-serves" class="filter-input" placeholder="min">
+    <input type="number" name="filter-max-serves" id="filter-max-serves" class="filter-input" placeholder="max">
+  </div>
+
+  <div class="filter-input-box">
+    <label for="filter-min-prep-time" class="filter-input-label">Prep Time</label>
+    <input type="number" name="filter-min-prep-time" id="filter-min-prep-time" class="filter-input" placeholder="min">
+    <input type="number" name="filter-max-prep-time" id="filter-max-prep-time" class="filter-input" placeholder="max">
+  </div>
+
+  <div class="filter-input-box">
+    <label for="filter-min-cook-time" class="filter-input-label">Cook Time</label>
+    <input type="number" name="filter-min-cook-time" id="filter-min-cook-time" class="filter-input" placeholder="min">
+    <input type="number" name="filter-max-cook-time" id="filter-max-cook-time" class="filter-input" placeholder="max">
+  </div>
+
+  <button id="filter-search-button" class="search-button">Search</button>
+
+</aside>
