@@ -1,0 +1,24 @@
+{
+  "name": "final-project-final-project-group-2",
+  "version": "1.0.0",
+  "description": "CS290 Final Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "handlebars views/partials/cakePost.handlebars -f public/cakePostTemplate.js",
+    "start": "node server.js",
+    "prestart": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSU-CS290-F17/final-project-final-project-group-2"
+  },
+  "author": "Amanda Crawford, Amanda Dattalo, Talia Moretty, Carly Stasack",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/OSU-CS290-F17/final-project-final-project-group-2/blob/master/README.md",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11"
+  }
+}
