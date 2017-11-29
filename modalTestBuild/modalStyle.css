@@ -1,0 +1,80 @@
+#modal-background{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.65)
+}
+
+#post-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1010;
+    overflow: scroll;
+}
+
+/*
+ .hidden{
+    display: none;
+}
+*/
+.modal-dialog{
+    width: auto;
+    max-width: 600px;
+    min-width: 350px;
+    min-height: 300px;
+    margin: 40px auto;
+    background-color: #eaeaea;
+}
+
+.modal-title {
+    position: relative;
+    padding: 10px 20px;
+}
+.modal-title h3{
+    margin: 0;
+    font-size: 28px;
+}
+
+#add-to-cart{
+    position: absolute;
+    right: 75px;
+    top: 5px;
+    font-size: 14px;
+    border: none;
+    color: #fef1e8
+    background: #64147a;
+    padding: 2px;
+    cursor: pointer;
+}
+#close-modal{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 14px;
+    border: none;
+    color: #fef1e8
+    background: #64147a;
+    padding: 2px;
+    cursor: pointer;
+}
+.modal-image-container{
+    background: #ecddf5
+    border: 2px solid black;
+    max-height: 240px;
+    max-width: 300px;
+}
+.modal-image-container img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.modal-tag-info-container{
+    width: 100%;
+    margin-top: 20px;
+}
