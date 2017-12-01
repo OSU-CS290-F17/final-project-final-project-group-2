@@ -17,12 +17,12 @@
     "cook": 30,
     "photoURL": "https://i.pinimg.com/236x/7b/2e/24/7b2e24bebd6a323913b43f47a8c9edac--moist-vanilla-cake-daisy-cakes.jpg"
   }
-  "Peppermint Candy Cream Cake":{
+  "Peppermint Candy Cream Cake": {
   "title": "Peppermint Candy Cream Cake",
   "type": "other",
   "dietaryTag": "",
-  "serves": "8",
-  "prep": "30",
+  "serves": 8,
+  "prep": 30,
   "cook": 5,
   "photoURL": "https://boulderlocavore.com/wp-content/uploads/2014/12/Peppermint-Candy-Cane-Ice-Cream-Pie-with-Chocolate-Ganache-Top-BoulderLocavore.com-362p.jpg"
   }
