@@ -24,6 +24,8 @@
 }
 */
 .modal-dialog{
+    border: 2px solid #64147a;
+    border-radius: 5px;
     width: auto;
     max-width: 600px;
     min-width: 350px;
@@ -41,15 +43,15 @@
     font-size: 28px;
 }
 
-#add-to-cart{
+#add-to-cart-button{
     position: absolute;
     right: 75px;
     top: 5px;
     font-size: 14px;
     border: none;
-    color: #fef1e8
+    color: #fef1e8;
     background: #64147a;
-    padding: 2px;
+    padding: 5px;
     cursor: pointer;
 }
 #close-modal{
@@ -58,23 +60,52 @@
     top: 5px;
     font-size: 14px;
     border: none;
-    color: #fef1e8
+    color: #fef1e8;
     background: #64147a;
-    padding: 2px;
+    padding: 5px;
     cursor: pointer;
 }
 .modal-image-container{
-    background: #ecddf5
-    border: 2px solid black;
-    max-height: 240px;
-    max-width: 300px;
+    background: #ecddf5l;
+    margin: auto;
+    border: 2px solid #64147a;
+    max-height: 220;
+    max-width: 350px;
+    border-radius: 3px;
 }
 .modal-image-container img{
     max-height: 100%;
     max-width: 100%;
+    
 }
 
-.modal-tag-info-container{
+.modal-info-container{
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dietary-tag,
+.cake-flavor,
+.serving-number,
+.prep-time,
+.cook-time
+{
+  display: inline-block;
+  font-size: 80%;
+  padding: 3px;
+  margin: 3px 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background: #ecddf5;
+}
+.modal-footer{
+  border-top: 1px solid black;
+  margin: auto;
+  text-align: center;
+  background-color: #64147a;
+}
+.recipe-link{
+  color:#fef1e8;
+  font-size: 15pt;
+  text-decoration: none;
 }
