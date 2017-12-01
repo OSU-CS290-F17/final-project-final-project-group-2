@@ -109,3 +109,65 @@
   font-size: 15pt;
   text-decoration: none;
 }
+
+#recipe-add-to-cart-button{
+  background-color: #64147a;
+  height: 40px;
+  width: 120px;
+  color: #fef1e8;
+  font-size: 20px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+}
+.recipe-page-content{
+  background: #c0c0c0;
+}
+
+.cake-photo-container{
+   width: 500;
+   height: 200px;
+   background:  #fef1e8;
+   border: 2px solid #64147a;
+   border-radius: 5px;
+   align: center;
+}
+.cake-photo-container img{
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+.space-holder{
+  height: 50px;
+}
+.cake-all-info-container{
+   background: #fef1e8;
+   border: 2px solid #64147a;
+   border-radius: 5px;
+  
+}
+.cake-all-info-container h2{
+  text-align: center;
+  color: #64147a;
+  text-decoration: underline;
+  font-size: 30px;
+}
+.cake-tag-container,
+.ingredient-list-container,
+.directions-container {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 10px 10px 10px 10px;
+  background: #eaeaea;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.cake-tag-container h3,
+.ingredient-list-container h3,
+.directions-container h3{
+  color: #64147a;
+  font-size: 15px;
+}
+
