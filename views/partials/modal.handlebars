@@ -3,16 +3,16 @@
     <div class="modal-dialog">
 
         <div class="modal-title">
-            <h3>Recipe Name!</h3>
+            <h3>{{title}}!</h3>
             <button type="button" id="add-to-cart-button" class="cart-button">Add to Cart</button>
-            <button type="button" id="close-modal" class="close-modal-button">Cancle</button>
+            <button type="button" id="close-modal" class="close-modal-button">Cancel</button>
         </div>
 
         <div class="modal-image-container">
-            <img src="https://static.pexels.com/photos/353347/pexels-photo-353347.jpeg" alt="recipe name!">
+            <img src={{photoURL}} alt="recipe name!">
         </div>
         <div class="modal-info-container">
-            <span class="cake-flavor">Vanilla</span><span class="dietary-tag">Vegan</span><span class="serving-number">25</span><span class="prep-time">45 minutes</span><span class="cook-time">90 minutes</span>
+            <span class="cake-flavor">{{type}}</span><span class="dietary-tag">{{dietaryTag}}</span><span class="serving-number">{{servers}}</span><span class="prep-time">{{prep}} minutes</span><span class="cook-time">{{cook}} minutes</span>
         </div>
         <div class="modal-footer">
             <a href="#" class="recipe-link">See Full Recipe</a>
