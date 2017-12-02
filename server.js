@@ -20,6 +20,26 @@ app.get('/aboutme', function(req, res, next) {
   res.status(200).render('aboutmePage');
 });
 
+app.get('/cakecart', function(req, res, next) {
+  res.status(200).render('cakeCart');
+});
+
+app.get('/addcake', function(req, res, next) {
+  res.status(200).render('addPage1');
+});
+
+app.get('/addcakeingredients', function(req, res, next) {
+  res.status(200).render('addPage2');
+});
+
+app.get('/addcakereview', function(req, res, next) {
+  res.status(200).render('addPage3');
+});
+
+app.get('/recipe', function(req, res, next) {
+  res.status(200).render('recipePage');
+});
+
 app.get('*', function (req, res) {
   res.status(404).render('404');
 });
