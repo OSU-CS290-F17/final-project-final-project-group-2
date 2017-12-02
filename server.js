@@ -16,6 +16,10 @@ app.get('/', function(req, res, next) {
 
 app.use(express.static('public'));
 
+app.get('/aboutme', function(req, res, next) {
+  res.status(200).render('aboutmePage');
+});
+
 app.get('*', function (req, res) {
   res.status(404).render('404');
 });

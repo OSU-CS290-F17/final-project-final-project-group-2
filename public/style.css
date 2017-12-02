@@ -159,7 +159,7 @@ fieldset{
     height: 220px;
     display: block;
     margin: auto;
-    
+
 }
 
 .modal-info-container{
@@ -227,7 +227,7 @@ fieldset{
    background: #fef1e8;
    border: 2px solid #64147a;
    border-radius: 5px;
-  
+
 }
 .cake-all-info-container h2{
   text-align: center;
@@ -252,4 +252,108 @@ fieldset{
 .directions-container h3{
   color: #64147a;
   font-size: 15px;
+}
+
+/****************************************************
+TALIA'S CODE STARTS HERE
+*****************************************************/
+
+/*HEADER CSS*/
+body{
+font-family: 'Script Brush';
+margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Script Brush MT';
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header{
+	background-color:rgb(192,192,192);
+	align-items: top;
+	display: flex;
+	position: relative;
+}
+
+.header-image-container {
+  margin: 20px;
+	padding: 30px;
+	height: 128px;
+	width: 128px;
+	border-width: 2px;
+	background-color: purple;
+}
+
+.divide-line{
+  margin: 0px;
+	width: 100%;
+	height: 40px;
+	background-color:rgb(100,20,122);
+}
+
+.site-title{
+	margin: 0px;
+	width: 100%;
+	height: 72px;
+	font-size: 75px;
+	text-decoration: underline;
+	background-color:rgb(192,192,192;
+}
+
+.site-title a:hover {
+  text-decoration: none;
+}
+
+/*ABOUT ME CSS*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 20px;
+
+}
+
+
+.about-page {
+  display: inline-block;
+  vertical-align: top;
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid rgb(254,241,232);
+  border-radius: 70px;
+  background-color:rgb(236,221,245);
+}
+
+.author-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.author-name{
+
+}
+.author-pic img {
+  align-items: center;
+  margin-top: 1px;
+  margin-left: 30px;
+ padding: 20px;
+ height: 200;
+ width: 200px;
+ border-width: 2px;
+ background-color:rgb(254,241,232) ;
+  border-radius: 60px;
+}
+
+.extra-info{
+
 }
