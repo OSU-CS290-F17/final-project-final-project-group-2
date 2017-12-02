@@ -16,7 +16,7 @@ app.get('/', function(req, res, next) {
 
 app.use(express.static('public'));
 
-app.get('/aboutme', function(req, res, next) {
+app.get('/aboutus', function(req, res, next) {
   res.status(200).render('aboutmePage');
 });
 
@@ -30,6 +30,10 @@ app.get('/addcake', function(req, res, next) {
 
 app.get('/addcakeingredients', function(req, res, next) {
   res.status(200).render('addPage2');
+});
+
+app.get('/addcakedirections', function(req, res, next) {
+  res.status(200).render('addPage3');
 });
 
 app.get('/addcakereview', function(req, res, next) {
