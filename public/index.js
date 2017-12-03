@@ -1,17 +1,71 @@
 
-function showHomePage(){
+function showHomePage(event){
 	var postRequest = new XMLHttpRequest();
-	var URLFinal = "/";
+	var URLFinal = "localhost::3000";
 	postRequest.open('POST', URLFinal);
 	console.log('Clicked');
+	postRequest.send()
+}
+
+function showAddPage(event){
+	var postRequest = new XMLHttpRequest();
+	var URL = "/addcake";
+	postRequest.open('POST', URL);
+	// postRequest.addEventListener('load', function(event){
+
+	// })
+}
+
+function showCakeCartPage(){
+
+}
+
+function showInforAuthorPage(){
+
+}
+
+function openModal(){
+
+}
+
+function filter(){
+
+}
+
+function modalToFullRecipe(){
+
+}
+
+function sendToFavoriteCake(){
+
+}
+
+function addRecipeToCart(){
+
+}
+
+function clickATag(){
+
+}
+
+function unclickATag(){
+
+}
+
+function addAnIngredient(){
+
+}
+
+function addAPost(){
+
 }
 
 window.addEventListener('DOMContentLoaded',function(){
 	var homePageButton = document.getElementById('home');
-	homePageButton.addEventListener('click', showHomePage());
+	homePageButton.addEventListener('click', showHomePage(event));
 
 	var addCakePageButton = document.getElementById('addCake');
-	addCakePageButton.addEventListener('click', showAddPage());
+	addCakePageButton.addEventListener('click', showAddPage(event));
 
 	var cakeCartPageButton = document.getElementById('cakeCart');
 	cakeCartPageButton.addEventListener('click', showCakeCartPage());
@@ -50,11 +104,12 @@ window.addEventListener('DOMContentLoaded',function(){
 
 	var cancelButtonToClose = document.getElementsByClassName('cancelButton');
 	for(var i = 0; i < cancelButtonToClose.length; i++){
-		cancelButtonToClose[i].addEventListener('click', showHomePage());
+		cancelButtonToClose[i].addEventListener('click', showHomePage(event));
 	}
 
 	var addIngredient = document.getElementById('add-ingredient');
 	addIngredient.addEventListener('click', addAnIngredient());
+
 	var addPost = document.getElementById('add-post');
-	addPost.addEventListener('click', addAnPost());
+	addPost.addEventListener('click', addAPost());
 });
