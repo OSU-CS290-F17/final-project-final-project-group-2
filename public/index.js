@@ -1,10 +1,11 @@
 
 function showHomePage(event){
-	var postRequest = new XMLHttpRequest();
-	var URLFinal = "localhost::3000";
-	postRequest.open('POST', URLFinal);
-	console.log('Clicked');
-	postRequest.send()
+	window.location.replace("localhost:3000/");
+	// var postRequest = new XMLHttpRequest();
+	// var URLFinal = "localhost::3000";
+	// postRequest.open('POST', URLFinal);
+	// console.log('Clicked');
+	// postRequest.send()
 }
 
 function showAddPage(event){
