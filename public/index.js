@@ -53,8 +53,8 @@ function addRecipeToCart(){
 
 function addAnIngredient(){
 	var ingredientTemplate = Handlebars.templates.ingredientsTemplate;
-	var ingredientsDiv = document.getElementById()
-	document.adjacentHTML
+	var ingredientsDiv = document.getElementById('ingedientsBox');
+	ingredientsDiv.adjacentHTML(ingredientTemplate);
 
 }
 
