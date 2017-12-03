@@ -45,4 +45,8 @@ window.addEventListener('DOMContentLoaded',function(){
 		cancelButtonToClose[i].addEventListener('click', closeModal());
 	}
 
+	var addIngredient = document.getElementById('add-ingredient');
+	addIngredient.addEventListener('click', addAnIngredient());
+	var addPost = document.getElementById('add-post');
+	addPost.addEventListener('click', addAnPost());
 });
