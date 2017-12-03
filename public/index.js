@@ -25,14 +25,34 @@ window.addEventListener('DOMContentLoaded',function(){
 	}
 */
 	var addIngredient = document.getElementById('add-ingredient');
-	addIngredient.addEventListener('click', addAnIngredient);
+	if(addIngredient){
+		addIngredient.addEventListener('click', addAnIngredient);
+	}
 
 	var addPost = document.getElementById('add-post');
 	//addPost.addEventListener('click', addAPost());
 
-
 });
+//<a href="http://localhost:3000/addcakeingredients">NEXT</a></button>
 
+var nextButton = document.getElementsByClassName('nextButton');
+console.log(nextButton.length);
+for(var i = 0; i < nextButton.length; i++){
+	if(nextButton[i]){
+		nextButton[i].addEventListener('click', saveData);
+	}
+}
+function saveData(){
+	//var objToReturn{};
+	var Title = document.getElementsByClassName('add-title-input');//Title[0].value
+	var URL = document.getElementsByClassName('add-URL-input');//URL[0].value
+	var flavorTag = document.getElementsByClassName('flavor-tags');//flavorTag[0].value
+	var servingSize = document.getElementsByClassName('serving-size');//servingSize[0].value
+	var prepTime = document.getElementsByClassName('prep-Time');//prepTime[0].value
+	var cookTime = document.getElementsByClassName('cook-Time');//cookTime[0].value
+	var dietaryTag = document.getElementsByClassName('dietary-tags');//dietaryTag[0].value
+	console.log(dietaryTag[0].value);
+}
 
 function openModal(){
 
