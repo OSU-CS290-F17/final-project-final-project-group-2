@@ -1,5 +1,10 @@
 
-
+function showHomePage(){
+	var postRequest = new XMLHttpRequest();
+	var URLFinal = "/";
+	postRequst.open('POST', URLFinal);
+	
+}
 
 window.addEventListener('DOMContentLoaded',function(){
 	var homePageButton = document.getElementById('home');
@@ -10,6 +15,9 @@ window.addEventListener('DOMContentLoaded',function(){
 
 	var cakeCartPageButton = document.getElementById('cakeCart');
 	cakeCartPageButton.addEventListener('click', showCakeCartPage());
+
+	var infoAuthorPageButton = document.getElementById('infoAuthor');
+	infoAuthorPageButton.addEventListener('click', showInfoAuthorPage());
 
 	var postToModal = document.getElementsByClassName('cake-post-container');
 	for(var i = 0; i < posts.length; i++){
@@ -42,7 +50,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
 	var cancelButtonToClose = document.getElementsByClassName('cancelButton');
 	for(var i = 0; i < cancelButtonToClose.length; i++){
-		cancelButtonToClose[i].addEventListener('click', closeModal());
+		cancelButtonToClose[i].addEventListener('click', showHomePage());
 	}
 
 	var addIngredient = document.getElementById('add-ingredient');
