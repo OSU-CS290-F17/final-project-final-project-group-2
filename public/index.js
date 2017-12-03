@@ -3,7 +3,7 @@ function showHomePage(){
 	var postRequest = new XMLHttpRequest();
 	var URLFinal = "/";
 	postRequest.open('POST', URLFinal);
-	
+	console.log('Clicked');
 }
 
 window.addEventListener('DOMContentLoaded',function(){
