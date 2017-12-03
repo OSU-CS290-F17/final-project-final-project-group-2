@@ -19,9 +19,19 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.json());
 
 app.get('/', function(req, res, next) {
-  res.status(200).render('homePage', {
-    cakesArray: cakeData,
-  });
+   var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
+   cakeDataCollection.find({}).toArray(function(err, results){
+   	if(err){
+		res.status(500).send("Error fetching cake Data from DB.");
+	}else{
+		console.log("== query results:", results);
+		res.status(200).render('homePage',{
+			cakesArray: results
+		});
+	}
+   
+   });
+   
 });
 
 app.use(express.static('public'));
