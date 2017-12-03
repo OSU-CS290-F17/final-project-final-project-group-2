@@ -8,22 +8,7 @@ Light Grey: rgb(234, 234, 234) #eaeaea
 Light Purple: rgb(236, 221, 245) #ecddf5
 */
 
-header{
-	background-color: #fff6eb;
-	align-items: top;
-	display: flex;
-	position: relative;
-}
 
-.header-image-container {
-	padding: 5px;
-	height: 128px;
-	width: 128px;
-	border-width: 2px;
-	border-style: dashed;
-	border-color: black;
-	background-color: purple;
-}
 
 .site-title{
 	margin: 0px;
@@ -264,30 +249,26 @@ font-family: 'Script Brush';
 margin: 0;
 }
 
-a {
+h1 {
   text-decoration: none;
   color: black;
   font-family: 'Script Brush MT';
 }
 
-a:hover {
+h1:hover {
   text-decoration: none;
 }
 
 header{
-	background-color:rgb(192,192,192);
+	background-color: #c0c0c0;
 	align-items: top;
 	display: flex;
 	position: relative;
 }
 
-.header-image-container {
-  margin: 20px;
-	padding: 30px;
+.header-image-container img {
 	height: 128px;
-	width: 128px;
-	border-width: 2px;
-	background-color: purple;
+	display: flex;
 }
 
 .divide-line{

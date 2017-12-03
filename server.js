@@ -16,6 +16,10 @@ app.get('/', function(req, res, next) {
 
 app.use(express.static('public'));
 
+app.get('/modal', function(req, res, next) {
+  res.status(200).render('modalPage');
+});
+
 app.get('/aboutus', function(req, res, next) {
   res.status(200).render('aboutmePage');
 });
