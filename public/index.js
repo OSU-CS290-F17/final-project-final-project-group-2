@@ -29,7 +29,10 @@ window.addEventListener('DOMContentLoaded',function(){
 
 	var addPost = document.getElementById('add-post');
 	//addPost.addEventListener('click', addAPost());
+
+
 });
+
 
 function openModal(){
 
@@ -51,11 +54,19 @@ function addRecipeToCart(){
 
 }
 
-function addAnIngredient(){
-	var ingredientTemplate = Handlebars.templates.ingredientsTemplate;
-	var ingredientsDiv = document.getElementById('ingedientsBox');
-	ingredientsDiv.insertAdjacentHTML('beforeend',ingredientTemplate);
+// function addAnIngredient(){
+// 	var parser = new DOMParser();
+// 	var ingredientTemplate = Handlebars.templates.ingredientsTemplate;
+// 	var doc = parser.parseFromString(ingredientTemplate,"text/html");
+// 	console.log(ingredientTemplate);
+// 	var ingredientsDiv = document.getElementById('ingredients-labels');
+// 	ingredientsDiv.insertAdjacentHTML('beforeend',doc);
 
+// }
+
+function addAnIngredient(){
+	var quantity_boxes = document.getElementsByClassName('quantity-boxes');
+	console.log(quantity_boxes);
 }
 
 function addAPost(){
