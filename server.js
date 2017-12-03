@@ -3,10 +3,20 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
 var exphbs = require('express-handlebars');
-var cakeData = require('./cakeData');
+var bodyParser = require('body-parser');
+var MongoClient = require('mongodb').MongoClient;
+
+//var cakeData = require('./cakeData');
+
+var mongoURL = 'mongodb://cs290_crawfama:cs290_crawfama@classmongo.engr.oregonstate.edu:27017/cs290_crawfama';
+
+var mongoConnection = null;
+
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
+
+app.use(bodyParser.json());
 
 app.get('/', function(req, res, next) {
   res.status(200).render('homePage', {
