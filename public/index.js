@@ -2,7 +2,7 @@
 function showHomePage(){
 	var postRequest = new XMLHttpRequest();
 	var URLFinal = "/";
-	postRequst.open('POST', URLFinal);
+	postRequest.open('POST', URLFinal);
 	
 }
 
