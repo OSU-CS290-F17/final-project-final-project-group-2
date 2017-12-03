@@ -17,21 +17,14 @@
   </div>
 
   <div class="filter-input-box">
-    <fieldset id="filter-dietary-tags" class="filter-fieldset">
-      <legend>Dietary Tags</legend>
-      <div>
-        <input type="checkbox" name="filter-dietary-tags" id="filter-dietary-tags-dairy-free" value="dairy-free">
-        <label for="filter-dietary-tags-dairy-free">Dairy Free</label>
-      </div>
-      <div>
-        <input type="checkbox" name="filter-dietary-tags" id="filter-dietary-tags-gluten-free" value="gluten-free">
-        <label for="filter-dietary-tags-gluten-free">Gluten Free</label>
-      </div>
-      <div>
-        <input type="checkbox" name="filter-dietary-tags" id="filter-dietary-tags-vegan" value="vegan">
-        <label for="filter-dietary-tags-vegan">Vegan</label>
-      </div>
-    </fieldset>
+    <label for="filter-dietary-tag">Dietary Tag</label>
+    <select id="filter-dietary-tag" class="filter-input" name="filter-dietary-tag">
+      <option selected value="">Any</option>
+      <option>Dairy Free</option>
+      <option>Gluten Free</option>
+      <option>Vegan</option>
+      <option>None</option>
+    </select>
   </div>
 
   <div class="filter-input-box">
