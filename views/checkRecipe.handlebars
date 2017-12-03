@@ -1,0 +1,37 @@
+<body>
+<div class="recipe-page-content">
+  <div class="cake-photo-container">
+    <img src = {{photoURL}} alt={{title}}>
+  </div>
+  <div class="space-holder">
+
+  </div>
+  <div class="cake-all-info-container">
+    <h2>{{title}}</h2>
+
+    <div class="cake-tag-container">
+      <h3>Quick Info: </h3>
+      <span class="cake-flavor">Flavor: {{type}}</span><span class="dietary-tag">Dietary Tag: {{dietaryTag}}</span><span class="serving-number">Servings: {{servers}}</span><span class="prep-time">Prep time: {{prep}} minutes</span><span class="cook-time">Cook Time: {{cook}} minutes</span>
+    </div>
+
+   <div class="ingredient-list-container">
+   <h3>Ingredient List: </h3>
+      {{#each ingredientsArray}}
+        {{> ingredients}}
+      {{/each}}
+   </div>
+
+   <div class="directions-container">
+   <h3>Directions: </h3>
+     <span class="directions-paragraph">{{directions}}</span>
+   </div>
+
+
+
+   <button type="button" id="recipe-add-to-cart-button" class="cart-button">Add to Cart</button>
+    <button type="button" class="cancelButton">X</button>
+    <button type="button" id="add-post"> ADD POST</button>
+
+   </div>
+  </div>
+  </body>
