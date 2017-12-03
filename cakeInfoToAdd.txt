@@ -1,0 +1,119 @@
+{
+cakeId: “toomuchchocolate”,
+title: “Too Much Chocolate Cake”,
+type: “chocolate”,
+dietaryTag: “none”,
+serves: “12”,
+prepTime: “20”,
+cookTime: “55”,
+photoURL: “https://www.giftmyemotions.com/image/cache/floralnation/FINUPD657-800x800.jpg”,
+
+directions: “Preheat oven to 350 degrees F (175 degrees C). In a large bowl, mix together the cake and pudding mixes, sour cream, oil, beaten eggs and water. Stir in the chocolate chips and pour batter into a well-greased 12 cup bundt pan. Bake for 50 to 55 minutes, or until top is springy to the touch and a wooden toothpick inserted comes out clean. Cool cake thoroughly in pan at least an hour and a half before inverting onto a plate If desired, dust the cake with powdered sugar.”
+})
+	
+
+Ingredients: 1 (18.25 ounce) package devil's food cake mix 
+1 (5.9 ounce) package instant chocolate pudding mix 
+1 cup sour cream 
+1 cup vegetable oil 
+4 eggs
+1/2 cup warm water 
+2 cups semisweet chocolate chips
+
+{
+cakeId: “newyorkCheesecake”,
+title: “New York Cheesecake”,
+type: “cheesecake”,
+dietaryTag: “none”,
+serves: “12”,	
+prepTime: “30”,
+cookTime: “60”,
+photoURL: “http://cookdiary.net/wp-content/uploads/images/New-York-Cheesecake_7986.jpg”,
+
+directions: “Preheat oven to 350 degrees F (175 degrees C). Grease a 9 inch springform pan. In a medium bowl, mix graham cracker crumbs with melted butter. Press onto bottom of springform pan. In a large bowl, mix cream cheese with sugar until smooth. Blend in milk, and then mix in the eggs one at a time, mixing just enough to incorporate. Mix in sour cream, vanilla and flour until smooth. Pour filling into prepared crust. Bake in preheated oven for 1 hour. Turn the oven off, and let cake cool in oven with the door closed for 5 to 6 hours; this prevents cracking. Chill in refrigerator until serving.”
+})
+
+
+Ingredients:
+15 graham crackers, crushed 
+2 tablespoons butter, melted 
+4 (8 ounce) packages cream cheese 
+1 1/2 cups white sugar
+3/4 cup milk
+4 eggs
+1 cup sour cream
+ 1 tablespoon vanilla extract 
+1/4 cup all-purpose flour
+
+{
+cakeId: “yellowcake”,
+title: “Yellow Cake”,
+type: “vanilla”,
+dietaryTag: “vegan”,
+serves: “12”,
+prepTime: “20”,
+cookTime: “30”,
+photoURL: “https://i.pinimg.com/736x/ae/18/64/ae1864d06f37b5c16de653a5a734a8b3--moist-yellow-cakes-yellow-cake-recipes.jpg”,
+directions: “Preheat oven to 350 degrees F (175 degrees C). Grease and flour 2 - 8 inch round pans. Sift together the flour, baking powder and salt. Set aside. In a large bowl, cream together the margarine and sugar until light and fluffy. Beat in the egg yolk substitutes slowly, then stir in the vanilla. Beat in the flour mixture alternately with the soy milk, mixing just until incorporated. Pour batter into prepared pans. Bake in the preheated oven for 25 to 30 minutes, or until tops spring back when lightly tapped. Cool 15 minutes before turning out onto cooling racks.”
+})
+
+
+Ingredients: 
+1 cup margarine 
+1 1/2 cups white sugar
+8 egg yolk substitues
+¾ cup soy milk
+1 ½ teaspoon vanilla extract
+2 cups cake flour 
+2 teaspoons baking powder
+1/2 teaspoon salt
+
+
+{
+cakeId: “fabulouscarrotcake”,
+title: “Fabulous Carrot Cake”,
+type: “carrot”,
+dietaryTag: “dairyfree”,
+serves: “15”,
+prepTime: “20”,
+cookTime: “60”,
+photoURL: “http://img.taste.com.au/36Hr5BNp/w720-h480-cfill-q80/taste/2016/11/step-by-step-carrot-cake-25853-1.jpeg”,
+directions: “Preheat oven to 350 degrees F (175 degrees C). Grease and flour an 8x12 inch pan. Preheat oven to 350 degrees F (175 degrees C). Grease and flour an 8x12 inch pan. In a large bowl, combine eggs, buttermilk, oil, sugar and vanilla. Mix well. Add flour mixture and mix well.  In a medium bowl, combine shredded carrots, coconut, walnuts, pineapple and raisins.  Using a large wooden spoon or a very heavy whisk, add carrot mixture to batter and fold in well.  Pour into prepared 8x12 inch pan, and bake at 350 degrees F (175 degrees C) for 1 hour. Check with toothpick.  Allow to cool for at least 20 minutes before serving.”
+})
+
+Ingredients: 
+3 eggs
+¾ cup soy butter milk
+¾ cup vegetable oil
+1 ½ cups white sugar
+2 teaspoons vanilla extract 
+2 teaspoons ground cinnamon
+1/4 teaspoon salt
+2 cups all-purpose flour 
+2 teaspoons baking soda 
+2 cups shredded carrots 
+1 cup flaked coconut 
+1 cup chopped walnuts 
+1 (8 ounce) can crushed pineapple with juice 
+1 cup raisins
+
+
+{
+cakeId: “creamcheesepoundcake”,
+title: “Cream Cheese Pound Cake”,
+type: “other”,
+dietaryTag: “none”,
+serves: “14”,
+prepTime: “30”,
+cookTime: “60”,
+photoURL: “https://images-gmi-pmc.edge-generalmills.com/82b53a9e-a711-4697-957c-81a007c4dbd3.jpg”,
+directions: “Preheat oven to 325 degrees F (160 degrees C) grease and flour a 10 inch tube pan.  In a large bowl, cream butter and cream cheese until smooth. Add sugar gradually and beat until fluffy.  Add eggs two at a time, beating well with each addition. Add the flour all at once and mix in. Add vanilla.  Pour into a 10 inch tube pan. Bake at 325 degrees F (160 degrees C) for 1 hour and 20 minutes. Check for doneness at 1 hour. A toothpick inserted into center of cake will come out clean.”
+})
+
+Ingredients: 
+1 (8 ounce) package cream cheese
+1 1/2 cups butter
+3 cups white sugar
+6 eggs
+3 cups all-purpose flour
+1 teaspoon vanilla extract
