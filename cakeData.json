@@ -6,7 +6,8 @@
     "serves": 8,
     "prep": 45,
     "cook": 30,
-    "photoURL": "https://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/Favorite-Coconut-Cake_EXPS_CWFM17_39030_B11_02_5b.jpg"
+    "photoURL": "https://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/Favorite-Coconut-Cake_EXPS_CWFM17_39030_B11_02_5b.jpg",
+    "recipeURL": "http://www.geniuskitchen.com/recipe/haupia-cake-162911"
   },
   "LazyDaisy": {
     "title": "Lasy Daisy Cake",
@@ -15,7 +16,8 @@
     "serves": 8,
     "prep": 45,
     "cook": 30,
-    "photoURL": "https://i.pinimg.com/236x/7b/2e/24/7b2e24bebd6a323913b43f47a8c9edac--moist-vanilla-cake-daisy-cakes.jpg"
+    "photoURL": "https://i.pinimg.com/236x/7b/2e/24/7b2e24bebd6a323913b43f47a8c9edac--moist-vanilla-cake-daisy-cakes.jpg",
+    "recipeURL": "http://www.geniuskitchen.com/recipe/lazy-daisy-cake-274994"
   },
   "PeppermintCandyCreamCake": {
   "title": "Peppermint Candy Cream Cake",
@@ -24,6 +26,7 @@
   "serves": 8,
   "prep": 30,
   "cook": 5,
-  "photoURL": "https://boulderlocavore.com/wp-content/uploads/2014/12/Peppermint-Candy-Cane-Ice-Cream-Pie-with-Chocolate-Ganache-Top-BoulderLocavore.com-362p.jpg"
+  "photoURL": "https://boulderlocavore.com/wp-content/uploads/2014/12/Peppermint-Candy-Cane-Ice-Cream-Pie-with-Chocolate-Ganache-Top-BoulderLocavore.com-362p.jpg",
+  "recipeURL": "https://www.epicurious.com/recipes/food/views/chocolate-peppermint-ice-cream-cake-108968"
   }
 }
