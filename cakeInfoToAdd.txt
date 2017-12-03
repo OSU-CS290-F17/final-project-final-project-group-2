@@ -1,119 +1,191 @@
 {
-cakeId: “toomuchchocolate”,
-title: “Too Much Chocolate Cake”,
-type: “chocolate”,
-dietaryTag: “none”,
-serves: “12”,
-prepTime: “20”,
-cookTime: “55”,
-photoURL: “https://www.giftmyemotions.com/image/cache/floralnation/FINUPD657-800x800.jpg”,
-
-directions: “Preheat oven to 350 degrees F (175 degrees C). In a large bowl, mix together the cake and pudding mixes, sour cream, oil, beaten eggs and water. Stir in the chocolate chips and pour batter into a well-greased 12 cup bundt pan. Bake for 50 to 55 minutes, or until top is springy to the touch and a wooden toothpick inserted comes out clean. Cool cake thoroughly in pan at least an hour and a half before inverting onto a plate If desired, dust the cake with powdered sugar.”
-})
-	
-
-Ingredients: 1 (18.25 ounce) package devil's food cake mix 
-1 (5.9 ounce) package instant chocolate pudding mix 
-1 cup sour cream 
-1 cup vegetable oil 
-4 eggs
-1/2 cup warm water 
-2 cups semisweet chocolate chips
-
+	"_id" : ObjectId("5a2450f9958874e57743eb7e"),
+	"cakeId" : "creamcheesepoundcake",
+	"type" : "other",
+	"title" : "Cream Cheese Pound Cake",
+	"dietaryTag" : "none",
+	"serves" : "14",
+	"prepTime" : "30",
+	"cookTime" : "60",
+	"photoURL" : "https://images-gmi-ppmc.edge-generalmills.com/82b53a9e-a711-4697-957c-81a007c4dbd3.jpg",
+	"directions" : "Preheat oven to 325 degrees F, grease and flour a 10 inch tube pan.  In a large bowl, cream butter and cream cheese until smooth.  Add sugar gradually and beat until fluffy.  Add eggs two at a time, beating well with each addition.  Add the flour all at once and mix in.  Add vanilla.  Pour into the 10 inch tube pan.  Bake at 325 degrees F for 1 hour and 20 minues.  Check doneness at 1 hour.  A toothpick inserted into center of cake will come out clean.  Let cool before serving.",
+	"ingredients" : [
+		"1 (8 ounce) package cream cheese",
+		"1 1/2 cups butter",
+		"3 cups white sugar",
+		"6 eggs",
+		"3 cups all-purpose flour",
+		"1 teaspoon vanilla extract"
+	]
+}
 {
-cakeId: “newyorkCheesecake”,
-title: “New York Cheesecake”,
-type: “cheesecake”,
-dietaryTag: “none”,
-serves: “12”,	
-prepTime: “30”,
-cookTime: “60”,
-photoURL: “http://cookdiary.net/wp-content/uploads/images/New-York-Cheesecake_7986.jpg”,
-
-directions: “Preheat oven to 350 degrees F (175 degrees C). Grease a 9 inch springform pan. In a medium bowl, mix graham cracker crumbs with melted butter. Press onto bottom of springform pan. In a large bowl, mix cream cheese with sugar until smooth. Blend in milk, and then mix in the eggs one at a time, mixing just enough to incorporate. Mix in sour cream, vanilla and flour until smooth. Pour filling into prepared crust. Bake in preheated oven for 1 hour. Turn the oven off, and let cake cool in oven with the door closed for 5 to 6 hours; this prevents cracking. Chill in refrigerator until serving.”
-})
-
-
-Ingredients:
-15 graham crackers, crushed 
-2 tablespoons butter, melted 
-4 (8 ounce) packages cream cheese 
-1 1/2 cups white sugar
-3/4 cup milk
-4 eggs
-1 cup sour cream
- 1 tablespoon vanilla extract 
-1/4 cup all-purpose flour
-
+	"_id" : ObjectId("5a245065958874e57743eb7d"),
+	"cakeId" : "fabulouscarrotcake",
+	"type" : "carrot",
+	"dietaryTag" : "dairyfree",
+	"serves" : "15",
+	"prepTime" : "20",
+	"cookTime" : "60",
+	"photoURL" : "http://img.taste.com.au/36Hr5BNp/w720-h480-cfill-q80/taste/2016/11/step-by-step-carrot-cake-25853-1.jpeg",
+	"directions" : "Preheat oven to 350 degrees F.  Grease and flour an 8x12 inch pan.  In a large bowl, combine eggs, buttermilk, oil, sugar and vanilla.  Mix well.  Add flour mixture and mix well.  In a meduim bowl, combine shredded carrots, coconut, walnuts, pineapple and raisins.  Using a large wooden spoon or very heavy whisk, add carrot mix to batter and fold in well.  Pour into prepared 8x12 inch pan, and bake at 350 degrees F for 1 hour.  Check with toothpick.  Allow to cool for at least 20 minutes before serving.",
+	"ingredients" : [
+		"3 eggs",
+		"3/4 cup soy butter milk",
+		"3/4 cup vegetable oil",
+		"1 1/2 cups white sugar",
+		"2 teaspoons vanilla extract ",
+		"2 teaspoons ground cinnamon",
+		"1/4 teaspoon salt",
+		"2 cups all-purpose flour",
+		"2 teaspoons baking soda",
+		"2 cups shredded carrots",
+		"1 cup flaked coconut",
+		"1 cup chopped walnuts",
+		"1 (8 ounce) can crushed pineapple with juice",
+		"1 cup raisins"
+	]
+}
 {
-cakeId: “yellowcake”,
-title: “Yellow Cake”,
-type: “vanilla”,
-dietaryTag: “vegan”,
-serves: “12”,
-prepTime: “20”,
-cookTime: “30”,
-photoURL: “https://i.pinimg.com/736x/ae/18/64/ae1864d06f37b5c16de653a5a734a8b3--moist-yellow-cakes-yellow-cake-recipes.jpg”,
-directions: “Preheat oven to 350 degrees F (175 degrees C). Grease and flour 2 - 8 inch round pans. Sift together the flour, baking powder and salt. Set aside. In a large bowl, cream together the margarine and sugar until light and fluffy. Beat in the egg yolk substitutes slowly, then stir in the vanilla. Beat in the flour mixture alternately with the soy milk, mixing just until incorporated. Pour batter into prepared pans. Bake in the preheated oven for 25 to 30 minutes, or until tops spring back when lightly tapped. Cool 15 minutes before turning out onto cooling racks.”
-})
-
-
-Ingredients: 
-1 cup margarine 
-1 1/2 cups white sugar
-8 egg yolk substitues
-¾ cup soy milk
-1 ½ teaspoon vanilla extract
-2 cups cake flour 
-2 teaspoons baking powder
-1/2 teaspoon salt
-
-
+	"_id" : ObjectId("5a244f82958874e57743eb7c"),
+	"cakeId" : "yellowcake",
+	"title" : "Yellow Cake",
+	"type" : "vanilla",
+	"dietaryTag" : "vegan",
+	"serves" : "12",
+	"prepTime" : "20",
+	"cookTime" : "30",
+	"photoURL" : "https://i.pinimg.com/736x/ae/18/64/ae1864d06f37b5c16de653a5a734a8b3--moist-yellow-cakes-yellow-cake-recipes.jpg",
+	"directions" : "Preheat oven to 350 degrees F. Grease and flour 2 - 8 inch round pans.  Sift together the flour, baking powder and salt.  Set aside.  In a large bowl, cream together the margarine and sugar until light and fluffy.  Beat in the egg yolk substitues slowly, then stir in the vanilla.  Beat in the flour mixture alternately with the soy milk, mixing just until incorporated.  Pour batter into preheated oven for 25 to 30 minutes, or until tops spring back when lightly tapped.  Cool 15 minutes before turning out onto cooling racks.",
+	"ingredients" : [
+		"1 cup margarine",
+		"1 1/2 cups white sugar",
+		"8 egg yolk substitues",
+		"3/4 cups soy milk",
+		"1 1/2 teaspoon vanilla extract",
+		"2 cups cake flour",
+		"2 teaspoons baking powder",
+		"1/2 teaspoon salt"
+	]
+}
 {
-cakeId: “fabulouscarrotcake”,
-title: “Fabulous Carrot Cake”,
-type: “carrot”,
-dietaryTag: “dairyfree”,
-serves: “15”,
-prepTime: “20”,
-cookTime: “60”,
-photoURL: “http://img.taste.com.au/36Hr5BNp/w720-h480-cfill-q80/taste/2016/11/step-by-step-carrot-cake-25853-1.jpeg”,
-directions: “Preheat oven to 350 degrees F (175 degrees C). Grease and flour an 8x12 inch pan. Preheat oven to 350 degrees F (175 degrees C). Grease and flour an 8x12 inch pan. In a large bowl, combine eggs, buttermilk, oil, sugar and vanilla. Mix well. Add flour mixture and mix well.  In a medium bowl, combine shredded carrots, coconut, walnuts, pineapple and raisins.  Using a large wooden spoon or a very heavy whisk, add carrot mixture to batter and fold in well.  Pour into prepared 8x12 inch pan, and bake at 350 degrees F (175 degrees C) for 1 hour. Check with toothpick.  Allow to cool for at least 20 minutes before serving.”
-})
-
-Ingredients: 
-3 eggs
-¾ cup soy butter milk
-¾ cup vegetable oil
-1 ½ cups white sugar
-2 teaspoons vanilla extract 
-2 teaspoons ground cinnamon
-1/4 teaspoon salt
-2 cups all-purpose flour 
-2 teaspoons baking soda 
-2 cups shredded carrots 
-1 cup flaked coconut 
-1 cup chopped walnuts 
-1 (8 ounce) can crushed pineapple with juice 
-1 cup raisins
-
-
+	"_id" : ObjectId("5a244ea9958874e57743eb7b"),
+	"cakeId" : "newyorkcheesecake",
+	"title" : "New York Cheesecake",
+	"type" : "cheesecake",
+	"dietaryTag" : "none",
+	"serves" : "12",
+	"prepTime" : "30",
+	"cookTime" : "60",
+	"photoURL" : "http://cookdiary.net/wp-content/uploads/images/New-York-Cheesecake_7986.jpg",
+	"directions" : "Preheat oven to 350 degrees F.  Grease a 9 inch springform pan.  In a medium bowl, mix grahm cracker crubs with melted butter.  Press onto bottom of springform pan.  In a large bowl, mix cream cheese with sugar until smooth.  Blend in milk, and then mix in the eggs one at a time, mixing just enough to incorporate.  Mix in sour cream, vanilla and flour until smooth.  Pour filling into prepared crust.  Bake in preheated oven for 1 hour.  Turn oven off, and let cake cool in oven with the door closed for 5 to 6 hours; this prevents cracking.  Chill in refrigerator until you serve.",
+	"ingredients" : [
+		"15 graham crackers, crushed",
+		"2 tablespoons butter, melted",
+		"4 (8 ounce) packages cream cheese",
+		"1 1/2 cups white sugar",
+		"3/4 cup milk",
+		"4 eggs",
+		"1 cup sour cream",
+		"1 tablespoon vanilla extract",
+		"1/4 cup all-purpose flour"
+	]
+}
 {
-cakeId: “creamcheesepoundcake”,
-title: “Cream Cheese Pound Cake”,
-type: “other”,
-dietaryTag: “none”,
-serves: “14”,
-prepTime: “30”,
-cookTime: “60”,
-photoURL: “https://images-gmi-pmc.edge-generalmills.com/82b53a9e-a711-4697-957c-81a007c4dbd3.jpg”,
-directions: “Preheat oven to 325 degrees F (160 degrees C) grease and flour a 10 inch tube pan.  In a large bowl, cream butter and cream cheese until smooth. Add sugar gradually and beat until fluffy.  Add eggs two at a time, beating well with each addition. Add the flour all at once and mix in. Add vanilla.  Pour into a 10 inch tube pan. Bake at 325 degrees F (160 degrees C) for 1 hour and 20 minutes. Check for doneness at 1 hour. A toothpick inserted into center of cake will come out clean.”
-})
-
-Ingredients: 
-1 (8 ounce) package cream cheese
-1 1/2 cups butter
-3 cups white sugar
-6 eggs
-3 cups all-purpose flour
-1 teaspoon vanilla extract
+	"_id" : ObjectId("5a244c45958874e57743eb79"),
+	"cakeId" : "toomuchchocolate",
+	"title" : "Too Much Chocolate Cake",
+	"type" : "chocolate",
+	"dietaryTag" : "none",
+	"serves" : "12",
+	"prepTime" : "20",
+	"cookTime" : "55",
+	"photoURL" : "https://www.giftmyemotions.com/image/cache/floralnation/FINUPD657-800x800.jpg",
+	"directions" : "Preheat oven to 350 degreees F.  In a large bowl, mix together the cake and pudding mixes, sour cream, oil, beaten eggs and water.  Stir in the chocolate chips and pour batter into a well greased 12 cup bundt pan.  Bake for 50 to 55 minues, or until top isspringy to the touch and a wooden toothpick inserted comes out clean.  Cool cake throughly in pan at least an hour and a half before inverting onto a plate.  If desired, dust the cake with powdered sugar for serving.",
+	"ingredients" : [
+		"1 (18.25 ounce) package devil's food cake mix",
+		"1 (5.9 ounce) package instant chocolate pudding mix",
+		"1 cup sour cream",
+		"1 cup vegetable oil",
+		"4 eggs",
+		"1/2 cup warm water",
+		"2 cups semisweet chocolate chips"
+	]
+}
+{
+	"_id" : ObjectId("5a23405d2280c539f13f9671"),
+	"title" : "Haupia",
+	"type" : "other",
+	"dietaryTag" : "none",
+	"serves" : "8",
+	"prepTime" : "45",
+	"cookTime" : "30",
+	"photoURL" : "https://cdn2.tmbi.com/TOH/Images/Photos/37/300x300/Favorite-Coconut-cake_EXPS_CWFM17_39030_B11_02_5b.jpg",
+	"cakeId" : "haupia",
+	"directions" : "MAKE CAKE & WHIPPED CREAM FROSTING: Preheat oven according to directions on cake mix.  Grease and flour two 8 or 9 inch round cake pans.  Prepare the cake according to the package directions, using 2/3 cup of the coconut milk, water, and egg whites.  When cakes are finished baking, cool and cut each cake horizontally into 2 layers. If your top layers are mouond-shaped, cut them so they are flat.  (If your layers aren't flat, your filling/frosting will seep off the cake and you'll have a mess.)  Soften gelatin in remaining 1/3 cup of coconut milk. Dissolve over hot water.  Cool completely.  In a bowl, whip the heavy cream.  Fold the gelatin mixture, sugar, and extract into the whipped cream.  Chill frosting until it is of spreading consistency.  MAKE HAUPIA FILLING: In a small bowl, mix together the sugar, salt, cornstarch and water.  set aside.  In a saucepan, heat the coconut milk. When hot, add the sugar mixture.  Cook, stirring constantly, until the mixture thickens.  Remove from heat.  Stir in vanilla and cool.  Chill the filling until it is of spreading consistency.  ASSEMBLE THE CAKE: Spread the Haupia Filling between each cake layer (spread it on pretty thickly, about 1/2 inch thick).  You'll have the following layers: cake, filling, cake, filling, cake, filling cake.  Refrigerate assembled cake until set.  Frost entire cake with whipped cream mixture.  Sprinkle coconut all over the cake sides and top.  Keep refrigerated until ready to serve.",
+	"ingredients" : [
+		"1 18 ounce box white cake mix",
+		"1 cup coconut milk",
+		"2/3 cup water",
+		"2 egg whites",
+		"1 tablespoon unflavored gelatin",
+		"2 cups heavy cream",
+		"6 tablespoons sugar",
+		"1 cup shredded coconut",
+		"1 cup sugar",
+		"1/2 teaspoon salt",
+		"6 tablespoons cornstarch",
+		"1 cup water",
+		"4 cups coconut milk",
+		"2 teaspoons vanilla"
+	]
+}
+{
+	"_id" : ObjectId("5a2343092280c539f13f9672"),
+	"cakeId" : "lazydaisy",
+	"title" : "Lazy Daisy Cake",
+	"type" : "other",
+	"dietaryTag" : "none",
+	"serves" : "8",
+	"prepTime" : "45",
+	"cookTime" : "30",
+	"photoURL" : "https://i.pinimg.com/236x/7b/2e/24/7b2e24bebd6a323913b43f47a8c9edac--moist-vanilla-cake-daisy-cakes.jpg",
+	"directions" : "In a large mixing bowl, beat the eggs ,sugar and vanilla until thick and pale yellow, about 4 min.  Combine flour, baking powder and salt; add to egg mixtture and beat until just combined.  In a saucepan, bring milk and butter to a boil, stirring constantly.  Add to batter and beat until combined.  Pou into a greased 13x9 inch baking pan.  Bake at 350 for 30-35 minutes or until toothpick inserted near center comes out clean.  Combine frostin gingredients; spread over warm cake.  Broil 4 inces from heat until lightly browned, about 3-4 minutes.",
+	"ingredients" : [
+		"4 eggs",
+		"2 cups sugar",
+		"2 teaspoons vanilla extract",
+		"2 cups all-purpose flour",
+		"2 teaspoons baking powder",
+		"1/2 teaspoon salt",
+		"1 cup milk",
+		"1/4 cup butter",
+		"1 1/2 cups brown sugar",
+		"3/4 cup melted butter",
+		"1/2 cup half-and-half cream",
+		"2 cups flaked coconut"
+	]
+}
+{
+	"_id" : ObjectId("5a2343b42280c539f13f9673"),
+	"cakeId" : "peppermintcandycream",
+	"title" : "Peppermint Candy Cream Cake",
+	"type" : "other",
+	"dietaryTag" : "none",
+	"serves" : "8",
+	"prepTime" : "30",
+	"cookTime" : "5",
+	"photoURL" : "https://boulderlocavore.com/wp-content/uploads/2014/12/Peppermint-Candy-Cane-Ice-Cream-Pie-with-Chocolate-Ganache-Top-BoulderLocavore.com-362p.jpg",
+	"directions" : "FOR CRUST: Melt butter with chocolate in heavy small saucepan over low heat.  Finely grind cookies in processor. Add warm chocolate mixture; blend just until crumbs are moistened.  Reserve 1 cup crumb mixture in small bowl.  Press remaining crumb mixture onto sides, then bottom of a 9 inch springform pan with 2 3/4 inch high sides.  Freeze.  FOR GLAZE: Bring cream and corn syrup to boil in heavy large saucepan. Remove from heat. Add chocolate; whisk iuntil melted and smooth. LEt stand until cool but still pourable, about 1 hour. FOR FILLING: Wroking quickly, mix ice cream, 1 1/4 cups crushed candies, and extract in large bowl until just blended. Spoon half of icecream into crus; spread evenly (placeremaining icecream mixture in bowl in freezer). Sprinkle reserved 1 cup cookie crumbs over ice cream in pan; press gently. Pour 1 cup chocolate glaze over ice cream in pan. Freeze 1 hour. Top with remaining ice cream; spread evenly. Freeze until firm, about 4 hours.  Stir remianing glaze over low heat just until pourable but not warm. Pour glaze over icecream; spread evenly. Freeze overnight. Run sharp knife between crust and pan sides to loosen cake. Release pan sides. Transfer cake to platter. Carnish with peppermint candies and serve.",
+	"ingredients" : [
+		"1/2 cup unsalted butter",
+		"8 ounces bittersweet chocolate, chopped",
+		"1 1/2 9 ounce packages chocolate wafer cookies",
+		"1/2 cup whipping cream",
+		"1/4 cup light corn syrup",
+		"6 ounces bittersweet chocolate, chopped",
+		"7 cups premium vanilla ice cream",
+		"1 1/4 cups coarsely crushed peppermint candies",
+		"2 teaspoons peppermint extract",
+		"1/2 cup whole peppermint candies"
+	]
+}
