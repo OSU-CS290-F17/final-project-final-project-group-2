@@ -35,7 +35,7 @@ app.get('/', function(req, res, next) {
 });
 
 app.use(express.static('public'));
-
+/*
 app.get('/modal', function(req, res, next) {
   res.status(200).render('modalPage');
 });
@@ -71,7 +71,16 @@ app.get('/recipe', function(req, res, next) {
 app.get('*', function (req, res) {
   res.status(404).render('404');
 });
-
+*/
+MongoClient.connect(mongoURL, function(err, connection){
+	if(err){
+		throw err;
+	}
+	mongoConnection = connection;
+	app.listen(port, function () {
+  	console.log("== Server is listening on port", port);
+	});
+});
 app.listen(port, function () {
   console.log("== Server is listening on port", port);
 });
