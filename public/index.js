@@ -1,6 +1,4 @@
 window.addEventListener('DOMContentLoaded',function(){
-
-
 /*	
 	var postToModal = document.getElementsByClassName('cake-post-container');
 	for(var i = 0; i < postToModal.length; i++){
@@ -33,16 +31,6 @@ window.addEventListener('DOMContentLoaded',function(){
 	//addPost.addEventListener('click', addAPost());
 });
 
-	// var tagsInAddPage = document.getElementsByClassName('unclicked');
-	// for(var i = 0; i < tagsInAddPage.length; i++){
-	// 	tagsInAddPage[i].addEventListener('click', clickATag);
-	// }
-	// var clickedTagsInAddPage = document.getElementsByClassName('clicked');
-	// for(var i = 0; i < clickedTagsInAddPage.length; i++){
-	// 	clickedTagsInAddPage[i].addEventListener('click', unclickATag);
-	// }
-
-
 function openModal(){
 
 }
@@ -64,7 +52,10 @@ function addRecipeToCart(){
 }
 
 function addAnIngredient(){
-	var ingredientTemplate = Handlebars.templates.addPage2;
+	var ingredientTemplate = Handlebars.templates.ingredientsTemplate;
+	var ingredientsDiv = document.getElementById()
+	document.adjacentHTML
+
 }
 
 function addAPost(){
