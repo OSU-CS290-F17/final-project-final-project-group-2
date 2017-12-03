@@ -2,7 +2,7 @@
   "Haupia": {
     "title": "Haupia Cake",
     "type": "other",
-    "dietaryTag": "",
+    "dietaryTag": "None",
     "serves": 8,
     "prep": 45,
     "cook": 30,
@@ -12,7 +12,7 @@
   "LazyDaisy": {
     "title": "Lasy Daisy Cake",
     "type": "other",
-    "dietaryTag": "",
+    "dietaryTag": "None",
     "serves": 8,
     "prep": 45,
     "cook": 30,
@@ -22,7 +22,7 @@
   "PeppermintCandyCreamCake": {
   "title": "Peppermint Candy Cream Cake",
   "type": "other",
-  "dietaryTag": "",
+  "dietaryTag": "None",
   "serves": 8,
   "prep": 30,
   "cook": 5,

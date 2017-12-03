@@ -1,0 +1,50 @@
+.main{
+  border: 5px solid #64147a;
+  border-radius: 10px;
+  background-color:#ecddf5;
+
+}
+
+.addPage_titles{
+  font-size: 25px;
+  flex: 1 auto;
+  width:auto;
+  margin-top:30px;
+  margin:15px;
+  padding: 20px;
+  border: 1px solid #64147a;
+  border-radius: 5px;
+  font-weight:bold;
+  background-color:white;
+}
+
+
+.cancelButton{
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+    border:1px solid #64147a;
+    background: #eaeaea;
+    padding: 5px;
+    cursor: pointer;
+}
+.nextButton{
+    position: absolute;
+    font-size: 14px;
+    right:35px;
+    border:1px solid #64147a;
+    background: #eaeaea;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+
+.first-column{
+  width = 50%;
+  display:flex;
+
+}
+.second-column{
+  display: flex;
+}
