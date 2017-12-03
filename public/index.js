@@ -1,29 +1,47 @@
+window.addEventListener('DOMContentLoaded',function(){
 
-function showHomePage(event){
-	window.location.replace("localhost:3000/");
-	// var postRequest = new XMLHttpRequest();
-	// var URLFinal = "localhost::3000";
-	// postRequest.open('POST', URLFinal);
-	// console.log('Clicked');
-	// postRequest.send()
-}
 
-function showAddPage(event){
-	var postRequest = new XMLHttpRequest();
-	var URL = "/addcake";
-	postRequest.open('POST', URL);
-	// postRequest.addEventListener('load', function(event){
+/*	
+	var postToModal = document.getElementsByClassName('cake-post-container');
+	for(var i = 0; i < postToModal.length; i++){
+		postToModal[i].addEventListener('click', openModal;
+	}
 
-	// })
-}
+	//var filterBoxSearch = document.getElementById('filter-search-button');
+	//filterBoxSearch.addEventListener('click', filter;
 
-function showCakeCartPage(){
+	var seeFullRecipe = document.getElementById('close-modal');
+	seeFullRecipe.addEventListener('click', modalToFullRecipe;
 
-}
+	var toFavoriteCake = document.getElementsByClassName('favoriteCake');
+	for (var i = 0; i < toFavoriteCake.length; i++) {
+		toFavoriteCake[i].addEventListener('click', sendToFavoriteCake;
+	}
+	
+	var addRecipeToCartButton = document.getElementById('recipe-add-to-cart-button');
+	addRecipeToCartButton.addEventListener('click', addRecipeToCart;
 
-function showInforAuthorPage(){
+	var cancelButtonToClose = document.getElementsByClassName('cancelButton');
+	for(var i = 0; i < cancelButtonToClose.length; i++){
+		cancelButtonToClose[i].addEventListener('click', showHomePage;
+	}
+*/
+	var addIngredient = document.getElementById('add-ingredient');
+	addIngredient.addEventListener('click', addAnIngredient);
 
-}
+	var addPost = document.getElementById('add-post');
+	//addPost.addEventListener('click', addAPost());
+});
+
+	// var tagsInAddPage = document.getElementsByClassName('unclicked');
+	// for(var i = 0; i < tagsInAddPage.length; i++){
+	// 	tagsInAddPage[i].addEventListener('click', clickATag);
+	// }
+	// var clickedTagsInAddPage = document.getElementsByClassName('clicked');
+	// for(var i = 0; i < clickedTagsInAddPage.length; i++){
+	// 	clickedTagsInAddPage[i].addEventListener('click', unclickATag);
+	// }
+
 
 function openModal(){
 
@@ -45,72 +63,11 @@ function addRecipeToCart(){
 
 }
 
-function clickATag(){
-
-}
-
-function unclickATag(){
-
-}
-
 function addAnIngredient(){
-
+	var ingredientTemplate = Handlebars.templates.addPage2;
 }
 
 function addAPost(){
 
 }
 
-window.addEventListener('DOMContentLoaded',function(){
-	var homePageButton = document.getElementById('home');
-	homePageButton.addEventListener('click', showHomePage(event));
-
-	var addCakePageButton = document.getElementById('addCake');
-	addCakePageButton.addEventListener('click', showAddPage(event));
-
-	var cakeCartPageButton = document.getElementById('cakeCart');
-	cakeCartPageButton.addEventListener('click', showCakeCartPage());
-
-	var infoAuthorPageButton = document.getElementById('infoAuthor');
-	infoAuthorPageButton.addEventListener('click', showInfoAuthorPage());
-
-	var postToModal = document.getElementsByClassName('cake-post-container');
-	for(var i = 0; i < posts.length; i++){
-		postToModal[i].addEventListener('click', openModal());
-	}
-
-	var filterBoxSearch = document.getElementById('filter-search-button');
-	filterBoxSearch.addEventListener('click', filter());
-
-	var seeFullRecipe = document.getElementById('close-modal');
-	seeFullRecipe.addEventListener('click', modalToFullRecipe());
-
-	var toFavoriteCake = document.getElementsByClassName('favoriteCake');
-	for (var i = 0; i < toFavoriteCake.length; i++) {
-		toFavoriteCake[i].addEventListener('click', sendToFavoriteCake());
-	}
-	
-	var addRecipeToCartButton = document.getElementById('recipe-add-to-cart-button');
-	addRecipeToCartButton.addEventListener('click', addRecipeToCart());
-
-	var tagsInAddPage = document.getElementsByClassName('unclicked');
-	for(var i = 0; i < tagsInAddPage.length; i++){
-		tagsInAddPage[i].addEventListener('click', clickATag());
-	}
-
-	var clickedTagsInAddPage = document.getElementsByClassName('clicked');
-	for(var i = 0; i < clickedTagsInAddPage.length; i++){
-		clickedTagsInAddPage[i].addEventListener('click', unclickATag());
-	}
-
-	var cancelButtonToClose = document.getElementsByClassName('cancelButton');
-	for(var i = 0; i < cancelButtonToClose.length; i++){
-		cancelButtonToClose[i].addEventListener('click', showHomePage(event));
-	}
-
-	var addIngredient = document.getElementById('add-ingredient');
-	addIngredient.addEventListener('click', addAnIngredient());
-
-	var addPost = document.getElementById('add-post');
-	addPost.addEventListener('click', addAPost());
-});
