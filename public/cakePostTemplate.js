@@ -9,7 +9,7 @@ templates['cakePost'] = template({"compiler":[7,">= 4.0.0"],"main":function(cont
     + alias4(((helper = (helper = helpers.type || (depth0 != null ? depth0.type : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"type","hash":{},"data":data}) : helper)))
     + " dietary-tag = "
     + alias4(((helper = (helper = helpers.dietaryTag || (depth0 != null ? depth0.dietaryTag : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"dietaryTag","hash":{},"data":data}) : helper)))
-    + " servers = "
+    + " serves = "
     + alias4(((helper = (helper = helpers.serves || (depth0 != null ? depth0.serves : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"serves","hash":{},"data":data}) : helper)))
     + " prep-time = "
     + alias4(((helper = (helper = helpers.prep || (depth0 != null ? depth0.prep : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"prep","hash":{},"data":data}) : helper)))
