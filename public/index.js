@@ -1,30 +1,4 @@
 window.addEventListener('DOMContentLoaded',function(){
-/*
-	var postToModal = document.getElementsByClassName('cake-post-container');
-	for(var i = 0; i < postToModal.length; i++){
-		postToModal[i].addEventListener('click', openModal;
-	}
-
-	//var filterBoxSearch = document.getElementById('filter-search-button');
-	//filterBoxSearch.addEventListener('click', filter;
-
-	var seeFullRecipe = document.getElementById('close-modal');
-	seeFullRecipe.addEventListener('click', modalToFullRecipe;
-
-	var toFavoriteCake = document.getElementsByClassName('favoriteCake');
-	for (var i = 0; i < toFavoriteCake.length; i++) {
-		toFavoriteCake[i].addEventListener('click', sendToFavoriteCake;
-	}
-
-	var addRecipeToCartButton = document.getElementById('recipe-add-to-cart-button');
-	addRecipeToCartButton.addEventListener('click', addRecipeToCart;
-
-	var cancelButtonToClose = document.getElementsByClassName('cancelButton');
-	for(var i = 0; i < cancelButtonToClose.length; i++){
-		cancelButtonToClose[i].addEventListener('click', showHomePage;
-	}
-*/
-
 	var addIngredient = document.getElementById('add-ingredient');
 	if(addIngredient){
 		addIngredient.addEventListener('click', addAnIngredient);
@@ -32,20 +6,14 @@ window.addEventListener('DOMContentLoaded',function(){
 
 	var addPost = document.getElementById('addCake');
 	if(addPost){
-		var post = addPost.addEventListener('click', addAPost);
-		if(post){
-			console.log("post == ",post);
-		}
-
+		addPost.addEventListener('click', addAPost);
 	}
-
 });
 
-var nextButton = document.getElementsByClassName('nextButton');
-for(var i = 0; i < nextButton.length; i++){
-	if(nextButton[i]){
-		nextButton[i].addEventListener('click', saveData);
-	}
+var PostButton = document.getElementsByClassName('nextButton');
+if(PostButton){
+	var post = PostButton.addEventListener('click', saveData);
+	console.log(post);
 }
 
 var cancelButton = document.getElementsByClassName('cancelButton');
@@ -54,6 +22,7 @@ if(cancelButton){
 }
 
 function saveData(){
+	console.log('in saveData');
 	var Title = document.getElementsByClassName('add-title-input');//Title[0].value
 	var URL = document.getElementsByClassName('add-URL-input');//URL[0].value
 	var flavorTag = document.getElementsByClassName('flavor-tags');//flavorTag[0].value
@@ -105,35 +74,11 @@ function saveData(){
 
 
 function closeModal(){
-	var background = document.getElementById('modal-add-background');
-	var modal = document.getElementById('main-addpage-modal');
-	console.log(background, modal);
+	var background = document.getElementById('modal-background');
+	var modal = document.getElementById('post-modal');
 	background.classList.add('hidden');
 	modal.classList.add('hidden');
 }
-
-
-function modalToFullRecipe(){
-
-}
-
-function sendToFavoriteCake(){
-
-}
-
-function addRecipeToCart(){
-
-}
-
-// function addAnIngredient(){
-// 	var parser = new DOMParser();
-// 	var ingredientTemplate = Handlebars.templates.ingredientsTemplate;
-// 	var doc = parser.parseFromString(ingredientTemplate,"text/html");
-// 	console.log(ingredientTemplate);
-// 	var ingredientsDiv = document.getElementById('ingredients-labels');
-// 	ingredientsDiv.insertAdjacentHTML('beforeend',doc);
-
-// }
 
 function addAnIngredient(){
 	var quantity_boxes = document.getElementsByClassName('quantity-boxes');
@@ -141,23 +86,14 @@ function addAnIngredient(){
 }
 
 function addAPost(){
-	var background = document.getElementById('modal-add-background');
-	var modal = document.getElementById('main-addpage-modal');
-	var filterbox = document.getElementsByClassName('filter');
-	var logo = document.getElementsByClassName('header-image-container');
-	var cakes = document.getElementsByClassName('cake-post-container');
-	// for(var i = 0; i < cakes.length; i++){
-	// 	cakes[i].classList.add('hidden');
-	// }
-	// filterbox[0].classList.add('hidden');
-	// logo[0].classList.add('hidden');
+	var background = document.getElementById('modal-background');
+	var modal = document.getElementById('post-modal');
 	background.classList.remove('hidden');
 	modal.classList.remove('hidden');
 }
 
 var filterBoxSearch = document.getElementById('filter-search-button');
-//filterBoxSearch.addEventListener('click', filter());
-//function filter(){
+
 filterBoxSearch.addEventListener('click', function filter(){
 	console.log("Search!");
 
