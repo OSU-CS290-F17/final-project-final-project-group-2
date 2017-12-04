@@ -69,6 +69,22 @@
     });
  });
 
+ app.get('/modal/:cakeId', function(req, res, next) {
+    var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
+    console.log("cakeId: ", req.params.cakeId);
+    cakeDataCollection.find({cakeId: req.params.cakeId}).toArray(function(err, results){
+    	if(err){
+ 		     res.status(500).send("Error fetching cake Data from DB.");
+ 	    }else if (results.length > 0){
+ 		     console.log("== query results:", results);
+ 		      res.status(200).render('modalPage', results[0]);
+ 	    }
+      else{
+        next();
+      }
+    });
+ });
+
  /*
  app.get('/modal', function(req, res, next) {
    res.status(200).render('modalPage');
