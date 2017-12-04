@@ -24,13 +24,16 @@ window.addEventListener('DOMContentLoaded',function(){
 		cancelButtonToClose[i].addEventListener('click', showHomePage;
 	}
 */
+
 	var addIngredient = document.getElementById('add-ingredient');
 	if(addIngredient){
 		addIngredient.addEventListener('click', addAnIngredient);
 	}
 
-	var addPost = document.getElementById('add-post');
-	//addPost.addEventListener('click', addAPost());
+	var addPost = document.getElementById('addCake');
+	if(addPost){
+		addPost.addEventListener('click', addAPost);
+	}
 
 });
 
@@ -42,6 +45,12 @@ for(var i = 0; i < nextButton.length; i++){
 		nextButton[i].addEventListener('click', saveData);
 	}
 }
+
+var cancelButton = document.getElementsByClassName('cancelButton');
+if(cancelButton){
+	cancelButton[0].addEventListener('click', closeModal);
+}
+
 //<a href="http://localhost:3000/addcakeingredients">NEXT</a></button>
 function saveData(){
 	var Title = document.getElementsByClassName('add-title-input');//Title[0].value
@@ -51,7 +60,25 @@ function saveData(){
 	var prepTime = document.getElementsByClassName('prep-Time');//prepTime[0].value
 	var cookTime = document.getElementsByClassName('cook-Time');//cookTime[0].value
 	var dietaryTag = document.getElementsByClassName('dietary-tags');//dietaryTag[0].value
-	//console.log(dietaryTag[0].value);
+	var directions = document.getElementsByClassName('description');
+	var quantity, unit, name, quantityclass, unitclass, nameclass;
+	var ingredients = '';
+	var i = 1;
+	quantityclass = "quantity-boxes";
+	unitclass = "unit-boxes";
+	nameclass = "name-boxes";
+	unit = document.getElementsByClassName(unitclass);
+	name = document.getElementsByClassName(nameclass);
+	quantity = document.getElementsByClassName(quantityclass);
+	//while(document.getElementsByClassName(quantityclass)[i].firstChild.nextElementSibling.value != ''){//there are ingredients)
+		console.log(name);//quantity[0].value
+		//ingredients = ingredients + " " + quantity[i].firstChild.nextElementSibling.value + " " + unit[i].firstChild.nextElementSibling.value + " " + name[i].value;
+		//console.log(ingredients);
+		i = i + 1;
+	//}
+
+	var Id = Title[0].value.split(' ').join('');
+	Id = Id.toLowerCase();
 	obj1 = {
 		title: Title[0].value,//cake id, type, dietarytag no spaces, lowercase...work on making this a modal
 		dietaryTag: dietaryTag[0].value,
@@ -60,16 +87,22 @@ function saveData(){
 		cookTime: cookTime[0].value,
 		type: flavorTag[0].value,
 		photoURL: URL[0].value,
+		directions: directions[0].value,
+		cakeId: Id,
 	}
 	if(obj1){
-	console.log(obj1);
+		//console.log(obj1);
+	}
 }
-}
 
 
 
-function openModal(){
-
+function closeModal(){
+	var background = document.getElementById('modal-add-background');
+	var modal = document.getElementById('main-addpage-modal');
+	console.log(background, modal);
+	background.classList.add('hidden');
+	modal.classList.add('hidden');
 }
 
 
@@ -101,7 +134,18 @@ function addAnIngredient(){
 }
 
 function addAPost(){
-
+	var background = document.getElementById('modal-add-background');
+	var modal = document.getElementById('main-addpage-modal');
+	var filterbox = document.getElementsByClassName('filter');
+	var logo = document.getElementsByClassName('header-image-container');
+	var cakes = document.getElementsByClassName('cake-post-container');
+	for(var i = 0; i < cakes.length; i++){
+		cakes[i].classList.add('hidden');
+	}
+	filterbox[0].classList.add('hidden');
+	logo[0].classList.add('hidden');
+	background.classList.remove('hidden');
+	modal.classList.remove('hidden');
 }
 
 var filterBoxSearch = document.getElementById('filter-search-button');
