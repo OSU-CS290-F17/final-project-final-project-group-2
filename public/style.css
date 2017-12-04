@@ -320,6 +320,7 @@ TALIA'S CODE STARTS HERE
   font-size: 25px;
   flex: 1 auto;
   width:auto;
+  
   margin-top:30px;
   margin:15px;
   padding: 20px;
@@ -329,21 +330,23 @@ TALIA'S CODE STARTS HERE
   background-color:white;
 }
 
-
 .Ingredients-Label{
   font-weight:bold;
   font-size:30px;
-  margin-left: 400px;
+//  margin-left: 400px;
+  padding:20px;
 }
 
-.Description-label{
-  padding:20px;
-  font-size: 25px;
+.description-label{
+ font-size: 25px;
   flex: 1 auto;
   width:auto;
-  margin-top:30px;
-  margin-bottom:30px;
   font-weight:bold;
+ 
+  margin-top:30px;
+ padding: 20px;
+
+
 }
 
 
