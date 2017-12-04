@@ -3,8 +3,8 @@
  var exphbs = require('express-handlebars');
  var bodyParser = require('body-parser');
  var MongoClient = require('mongodb').MongoClient;
- 
- 
+
+
  var app = express();
  var port = process.env.PORT || 3001;
  var cakeData = require('./cakeData');
@@ -23,16 +23,14 @@
     var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
     cakeDataCollection.find({}).toArray(function(err, results){
     	if(err){
- 		res.status(500).send("Error fetching cake Data from DB.");
- 	}else{
- 		console.log("== query results:", results);
- 		res.status(200).render('homePage',{
- 			cakesArray: results
- 		});
- 	}
-   
+ 		     res.status(500).send("Error fetching cake Data from DB.");
+ 	    }else{
+ 		     console.log("== query results:", results);
+ 		      res.status(200).render('homePage',{
+ 			        cakesArray: results
+ 		      });
+ 	    }
     });
-   
  });
 
  app.use(express.static('public'));
