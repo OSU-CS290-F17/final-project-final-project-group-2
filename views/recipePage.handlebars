@@ -11,12 +11,12 @@
 
     <div class="cake-tag-container">
       <h3>Quick Info: </h3>
-      <span class="cake-flavor">Flavor: {{type}}</span><span class="dietary-tag">Dietary Tag: {{dietaryTag}}</span><span class="serving-number">Servings: {{servers}}</span><span class="prep-time">Prep time: {{prep}} minutes</span><span class="cook-time">Cook Time: {{cook}} minutes</span>
+      <span class="cake-flavor">Flavor: {{type}}</span><span class="dietary-tag">Dietary Tag: {{dietaryTag}}</span><span class="serving-number">Servings: {{serves}}</span><span class="prep-time">Prep time: {{prepTime}} minutes</span><span class="cook-time">Cook Time: {{cookTime}} minutes</span>
     </div>
 
    <div class="ingredient-list-container">
    <h3>Ingredient List: </h3>
-      {{#each ingredientsArray}}
+      {{#each ingredients}}
         {{> ingredients}}
       {{/each}}
    </div>

@@ -49,29 +49,32 @@
     });
  });
 
- /*app.get('/recipe/:cakeId', function(req, res, next) {
-    var cakeDataCollection = mongoConnection.collection('cakeCart');
+ app.get('/aboutus', function(req, res, next) {
+   res.status(200).render('aboutmePage');
+ });
+
+ app.get('/recipe/:cakeId', function(req, res, next) {
+    var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
     console.log("cakeId: ", req.params.cakeId);
     cakeDataCollection.find({cakeId: req.params.cakeId}).toArray(function(err, results){
     	if(err){
  		     res.status(500).send("Error fetching cake Data from DB.");
- 	    }else{
+ 	    }else if (results.length > 0){
  		     console.log("== query results:", results);
- 		      res.status(200).render('recipePage',{
- 			        cakesArray: results
- 		      });
+ 		      res.status(200).render('recipePage', results[0]);
  	    }
+      else{
+        next();
+      }
     });
- });*/
+ });
 
  /*
  app.get('/modal', function(req, res, next) {
    res.status(200).render('modalPage');
  });
 
- app.get('/aboutus', function(req, res, next) {
-   res.status(200).render('aboutmePage');
- });
+
 
  app.get('/cakecart', function(req, res, next) {
    res.status(200).render('cakeCart');
