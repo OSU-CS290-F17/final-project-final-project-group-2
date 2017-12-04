@@ -1,3 +1,16 @@
+/*function createCakePost(photoURL, caption) {
+
+  var photoCardTemplateArgs = {
+    photoURL: photoURL,
+    caption: caption
+  };
+
+  var photoCardHTML = Handlebars.templates.photoCard(photoCardTemplateArgs);
+
+  return photoCardHTML;
+
+}*/
+
 window.addEventListener('DOMContentLoaded',function(){
 	var addIngredient = document.getElementById('add-ingredient');
 	if(addIngredient){
@@ -32,7 +45,7 @@ function saveData(){
 	var dietaryTag = document.getElementsByClassName('dietary-tags');//dietaryTag[0].value
 	var directions = document.getElementsByClassName('description');
 	var quantity, unit, name, quantityclass, unitclass, nameclass;
-	
+
 	var i = 0;
 	quantityclass = "quantity-boxes";
 	unitclass = "unit-boxes";
@@ -66,9 +79,25 @@ function saveData(){
 		cakeId: Id,
 		ingredients: ingredientsArray,
 	}
-	if(obj1){
-		return(obj1);
-	}
+
+	//Testing....
+
+	var requestBody = JSON.stringify(photoObj);
+	postRequest.setRequestHeader('Content-Type', 'application/json');
+
+	postRequest.addEventListener('load', function(event){
+		if (event.target.status !== 200){
+			alert("Error storing cake in database:\n\n\n" + event.target.response);
+		} else {
+			//var newPhotoCard = createPhotoCard(photoURL, caption);
+      //var photoCardContainer = document.querySelector('.photo-card-container');
+
+      //photoCardContainer.insertAdjacentHTML('beforeend', newPhotoCard);
+		}
+	});
+
+	postRequest.send(requestBody);
+	closeModal();
 }
 
 
