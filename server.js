@@ -35,6 +35,35 @@
 
  app.use(express.static('public'));
 
+ app.get('/cakecart', function(req, res, next) {
+    var cakeDataCollection = mongoConnection.collection('cakeCart');
+    cakeDataCollection.find({}).toArray(function(err, results){
+    	if(err){
+ 		     res.status(500).send("Error fetching cake Data from DB.");
+ 	    }else{
+ 		     console.log("== query results:", results);
+ 		      res.status(200).render('homePage',{
+ 			        cakesArray: results
+ 		      });
+ 	    }
+    });
+ });
+
+ /*app.get('/recipe/:cakeId', function(req, res, next) {
+    var cakeDataCollection = mongoConnection.collection('cakeCart');
+    console.log("cakeId: ", req.params.cakeId);
+    cakeDataCollection.find({cakeId: req.params.cakeId}).toArray(function(err, results){
+    	if(err){
+ 		     res.status(500).send("Error fetching cake Data from DB.");
+ 	    }else{
+ 		     console.log("== query results:", results);
+ 		      res.status(200).render('recipePage',{
+ 			        cakesArray: results
+ 		      });
+ 	    }
+    });
+ });*/
+
  /*
  app.get('/modal', function(req, res, next) {
    res.status(200).render('modalPage');
