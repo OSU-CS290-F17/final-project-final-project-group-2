@@ -15,8 +15,8 @@ templates['cakePost'] = template({"compiler":[7,">= 4.0.0"],"main":function(cont
     + alias4(((helper = (helper = helpers.prep || (depth0 != null ? depth0.prep : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"prep","hash":{},"data":data}) : helper)))
     + " cook-time = "
     + alias4(((helper = (helper = helpers.cook || (depth0 != null ? depth0.cook : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"cook","hash":{},"data":data}) : helper)))
-    + ">\r\n  <img src="
+    + ">\n  <img src="
     + alias4(((helper = (helper = helpers.photoURL || (depth0 != null ? depth0.photoURL : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"photoURL","hash":{},"data":data}) : helper)))
-    + ">\r\n</div>\r\n";
+    + ">\n</div>\n";
 },"useData":true});
 })();

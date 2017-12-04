@@ -33,17 +33,17 @@ window.addEventListener('DOMContentLoaded',function(){
 	//addPost.addEventListener('click', addAPost());
 
 });
-//<a href="http://localhost:3000/addcakeingredients">NEXT</a></button>
+
+var obj1, obj2, obj3, objToReturn;
 
 var nextButton = document.getElementsByClassName('nextButton');
-console.log(nextButton.length);
 for(var i = 0; i < nextButton.length; i++){
 	if(nextButton[i]){
 		nextButton[i].addEventListener('click', saveData);
 	}
 }
+//<a href="http://localhost:3000/addcakeingredients">NEXT</a></button>
 function saveData(){
-	//var objToReturn{};
 	var Title = document.getElementsByClassName('add-title-input');//Title[0].value
 	var URL = document.getElementsByClassName('add-URL-input');//URL[0].value
 	var flavorTag = document.getElementsByClassName('flavor-tags');//flavorTag[0].value
@@ -51,14 +51,28 @@ function saveData(){
 	var prepTime = document.getElementsByClassName('prep-Time');//prepTime[0].value
 	var cookTime = document.getElementsByClassName('cook-Time');//cookTime[0].value
 	var dietaryTag = document.getElementsByClassName('dietary-tags');//dietaryTag[0].value
-	console.log(dietaryTag[0].value);
+	//console.log(dietaryTag[0].value);
+	obj1 = {
+		title: Title[0].value,//cake id, type, dietarytag no spaces, lowercase...work on making this a modal
+		dietaryTag: dietaryTag[0].value,
+		serves: servingSize[0].value,
+		prepTime: prepTime[0].value,
+		cookTime: cookTime[0].value,
+		type: flavorTag[0].value,
+		photoURL: URL[0].value,
+	}
+	if(obj1){
+	console.log(obj1);
 }
+}
+
+
 
 function openModal(){
 
 }
 
-var filterBoxSearch = document.getElementById('filter-search-button');
+/*var filterBoxSearch = document.getElementById('filter-search-button');
 //filterBoxSearch.addEventListener('click', filter());
 //function filter(){
 filterBoxSearch.addEventListener('click', function filter(){
@@ -144,7 +158,7 @@ console.log("cook: ", allPosts[i].getAttribute("cook-time"));
 		}
 	}
 
-});
+});*/
 
 function modalToFullRecipe(){
 

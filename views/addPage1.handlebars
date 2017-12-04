@@ -123,6 +123,7 @@
 		<div class="addPage_titles">
 			<label class="add-dietary-label">Dietary Tags</label>
 			<select class="dietary-tags">
+				<option class="unclicked">None</option>
 				<option class="unclicked">Dairy Free</option>
 				<option class="unclicked">Gluten Free</option>
 				<option class="unclicked">Egg Free</option>
@@ -132,6 +133,7 @@
 		<div class="addPage_titles">
 			<label class="add-flavor-tag-label">Flavor Tags</label>
 			<select>
+				<option class="unclicked">Other</option>
 				<option class="unclicked">Chocolate</option>
 				<option class="unclicked">Vanilla</option>
 				<option class="unclicked">Cheesecake</option>
@@ -141,6 +143,27 @@
 			</select>
 		</div>
 	</aside>
-		<button type="button" class="nextButton"><a href="http://localhost:3000/addcakeingredients">NEXT</a></button>
-		<button type="button" class="cancelButton"><a href="http://localhost:3000/">X</a></button>
+	<div id="ingredientsBox">
+	<label class="Ingredients-Label">Ingredients</label>
+	<aside class="first-column">
+		<label class="ingredients-labels">Quantity</label>
+	</aside>
+	<aside class="third-column">
+		<label class="ingredients-labels">Unit</label>
+	</aside>
+	<aside class="fourth-column">
+		<label class="ingredients-labels">Name</label>
+	</aside>
+
+
+	{{> ingredientsTemplate}}
+	
+	<button type="button" id="add-ingredient">ADD INGREDIENT</button>
+	<label class="Description-label">Description</label>
+	<input type="text" name="description">
+	<button type="button" class="nextButton"><a href="http://localhost:3000/addcakereview">NEXT</a></button>
+	<button type="button" class="cancelButton"><a href="http://localhost:3000/">X</a></button>
+</div>
+
+
 </div>
