@@ -32,12 +32,14 @@ window.addEventListener('DOMContentLoaded',function(){
 
 	var addPost = document.getElementById('addCake');
 	if(addPost){
-		addPost.addEventListener('click', addAPost);
+		var post = addPost.addEventListener('click', addAPost);
+		if(post){
+			console.log("post == ",post);
+		}
+
 	}
 
 });
-
-var obj1, obj2, obj3, objToReturn;
 
 var nextButton = document.getElementsByClassName('nextButton');
 for(var i = 0; i < nextButton.length; i++){
@@ -51,7 +53,6 @@ if(cancelButton){
 	cancelButton[0].addEventListener('click', closeModal);
 }
 
-//<a href="http://localhost:3000/addcakeingredients">NEXT</a></button>
 function saveData(){
 	var Title = document.getElementsByClassName('add-title-input');//Title[0].value
 	var URL = document.getElementsByClassName('add-URL-input');//URL[0].value
@@ -62,24 +63,29 @@ function saveData(){
 	var dietaryTag = document.getElementsByClassName('dietary-tags');//dietaryTag[0].value
 	var directions = document.getElementsByClassName('description');
 	var quantity, unit, name, quantityclass, unitclass, nameclass;
-	var ingredients = '';
-	var i = 1;
+	
+	var i = 0;
 	quantityclass = "quantity-boxes";
 	unitclass = "unit-boxes";
-	nameclass = "name-boxes";
+	nameclass = "nameBox";
 	unit = document.getElementsByClassName(unitclass);
 	name = document.getElementsByClassName(nameclass);
 	quantity = document.getElementsByClassName(quantityclass);
-	//while(document.getElementsByClassName(quantityclass)[i].firstChild.nextElementSibling.value != ''){//there are ingredients)
-		console.log(name);//quantity[0].value
-		//ingredients = ingredients + " " + quantity[i].firstChild.nextElementSibling.value + " " + unit[i].firstChild.nextElementSibling.value + " " + name[i].value;
-		//console.log(ingredients);
+	var ingredients = '';
+	var object;
+	var ingredientsArray = [];
+	while(document.getElementsByClassName(quantityclass)[i].firstChild.nextElementSibling.value != ''){//there are ingredients)
+		ingredients = quantity[i].firstChild.nextElementSibling.value + " " + unit[i].firstChild.nextElementSibling.value + " " + name[i].firstChild.nextElementSibling.value + " ";
+		object = {
+			ingredientItem: ingredients,
+		}
+		ingredientsArray[i] = object;
 		i = i + 1;
-	//}
+	}
 
 	var Id = Title[0].value.split(' ').join('');
 	Id = Id.toLowerCase();
-	obj1 = {
+	var obj1 = {
 		title: Title[0].value,//cake id, type, dietarytag no spaces, lowercase...work on making this a modal
 		dietaryTag: dietaryTag[0].value,
 		serves: servingSize[0].value,
@@ -89,9 +95,10 @@ function saveData(){
 		photoURL: URL[0].value,
 		directions: directions[0].value,
 		cakeId: Id,
+		ingredients: ingredientsArray,
 	}
 	if(obj1){
-		//console.log(obj1);
+		return(obj1);
 	}
 }
 
@@ -139,11 +146,11 @@ function addAPost(){
 	var filterbox = document.getElementsByClassName('filter');
 	var logo = document.getElementsByClassName('header-image-container');
 	var cakes = document.getElementsByClassName('cake-post-container');
-	for(var i = 0; i < cakes.length; i++){
-		cakes[i].classList.add('hidden');
-	}
-	filterbox[0].classList.add('hidden');
-	logo[0].classList.add('hidden');
+	// for(var i = 0; i < cakes.length; i++){
+	// 	cakes[i].classList.add('hidden');
+	// }
+	// filterbox[0].classList.add('hidden');
+	// logo[0].classList.add('hidden');
 	background.classList.remove('hidden');
 	modal.classList.remove('hidden');
 }
