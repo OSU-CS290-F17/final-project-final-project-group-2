@@ -12,9 +12,9 @@ templates['cakePost'] = template({"compiler":[7,">= 4.0.0"],"main":function(cont
     + " serves = "
     + alias4(((helper = (helper = helpers.serves || (depth0 != null ? depth0.serves : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"serves","hash":{},"data":data}) : helper)))
     + " prep-time = "
-    + alias4(((helper = (helper = helpers.prep || (depth0 != null ? depth0.prep : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"prep","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.prepTime || (depth0 != null ? depth0.prepTime : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"prepTime","hash":{},"data":data}) : helper)))
     + " cook-time = "
-    + alias4(((helper = (helper = helpers.cook || (depth0 != null ? depth0.cook : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"cook","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.cookTime || (depth0 != null ? depth0.cookTime : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"cookTime","hash":{},"data":data}) : helper)))
     + ">\n  <img src="
     + alias4(((helper = (helper = helpers.photoURL || (depth0 != null ? depth0.photoURL : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"photoURL","hash":{},"data":data}) : helper)))
     + ">\n</div>\n";
