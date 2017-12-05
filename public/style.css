@@ -288,13 +288,13 @@ TALIA'S CODE STARTS HERE
 *****************************************************/
 /*Adding Pages*/
 
-.main{
+.addModalContainer{
   border-radius: 10px;
 
-  background-color:#ecddf5;
+  background-color:#eaeaea;
 
 }
-
+/*
 .hidden{
 
   border: 5px solid #64147a;
@@ -304,7 +304,7 @@ TALIA'S CODE STARTS HERE
   background-color:#ecddf5;
 
 }
-
+*/
 
 
 
