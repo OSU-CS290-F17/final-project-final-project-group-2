@@ -261,11 +261,4 @@ if(filterBoxSearch){
   	}
 
   });
-
-/*  for(var i = 0; i < allPosts.length; i++){
-  	if(allPosts[i]){
-  		allPosts[i].addEventListener('click');
-
-  	}
-  }*/
 }
