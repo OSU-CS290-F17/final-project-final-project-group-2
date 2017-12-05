@@ -166,17 +166,17 @@ function closeModal(){
 	modal.classList.add('hidden');
 }
 
-function addAnIngredient(){
+/*function addAnIngredient(){
 	var quantity_boxes = document.getElementsByClassName('quantity-boxes');
 	console.log(quantity_boxes);
-}
+}*/
 
 function addAPost(){
 	var background = document.getElementById('modal-background');
 	var modal = document.getElementById('post-modal');
 	background.classList.remove('hidden');
 	modal.classList.remove('hidden');
-	console.log("addapost")
+	//console.log("addapost")
 }
 
 var filterBoxSearch = document.getElementById('filter-search-button');
@@ -262,10 +262,10 @@ if(filterBoxSearch){
 
   });
 
-  for(var i = 0; i < allPosts.length; i++){
+/*  for(var i = 0; i < allPosts.length; i++){
   	if(allPosts[i]){
-  		allPosts[i].addEventListener('click', openCakeModal);
+  		allPosts[i].addEventListener('click');
 
   	}
-  }
+  }*/
 }
