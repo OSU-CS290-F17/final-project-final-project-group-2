@@ -19,24 +19,35 @@ Light Purple: rgb(236, 221, 245) #ecddf5
 }
 
 //Error page
-.mainError{
-
-  border: 5px solid #64147a;
-  border-radius: 10px;
-  background-color:#ecddf5;
-  
-//  width: 400px;
-  text-align:center;
-  padding:30px;
-  
-  font-size:30px;
-  font-weight:bold;
+.errorContainer{
+  background-color: #fef1e8;
 }
 
+.errortext{
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}
+.errortext h2{
+  font-size: 100px;
+  margin: auto;
+}
+.errortext h3{
+  font-size: 70px;
+  align:center;
+  margin: auto;
+}
+.errorPictureContainer{
+  height: 500px;
+  width: 500px;
+  align: center;
+  display: flex;
+  margin: auto;
+  
+}
 
-.Error-pic-Container{
-  width:700px;
-  height:700px;
+.errorPictureContainer img{
+  height:100%;
 }
 
 body {
