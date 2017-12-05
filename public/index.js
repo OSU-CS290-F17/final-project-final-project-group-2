@@ -64,6 +64,7 @@ function saveData(){
 	var ingredients = '';
 	var object;
 	var ingredientsArray = [];
+	var name = document.getElementsByClassName('nameBox');
 	while(document.getElementsByClassName(quantityclass)[i].firstChild.nextElementSibling.value != ''){//there are ingredients)
 		ingredients = quantity[i].firstChild.nextElementSibling.value + " " + unit[i].firstChild.nextElementSibling.value + " " + name[i].firstChild.nextElementSibling.value + " ";
 		object = {
