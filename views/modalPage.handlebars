@@ -7,7 +7,7 @@
           <div class="modal-title">
               <h3>{{title}}!</h3>
               <button type="button" id="add-to-cart-button" class="cart-button">Add to Cart</button>
-              <button type="button" id="close-modal" class="close-modal-button">Cancel</button>
+              <a href="/"><button type="button" id="close-modal" class="close-modal-button">Cancel</button></a>
           </div>
 
           <div class="modal-image-container">
@@ -17,7 +17,7 @@
               <span class="cake-flavor">{{type}}</span><span class="dietary-tag">{{dietaryTag}}</span><span class="serving-number">{{serves}}</span><span class="prep-time">{{prepTime}} minutes</span><span class="cook-time">{{cookTime}} minutes</span>
           </div>
           <div class="modal-footer">
-              <a href="#" class="recipe-link">See Full Recipe</a>
+              <a href="/recipe/{{cakeId}}" class="recipe-link">See Full Recipe</a>
           </div>
       </div>
   </div>
