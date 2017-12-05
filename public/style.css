@@ -143,6 +143,7 @@ AMANDA CSS STARTS HERE
     max-height: 220px;
     max-width: 350px;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 .modal-image-container img{
     height: 220px;
