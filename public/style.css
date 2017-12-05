@@ -267,17 +267,33 @@ TALIA'S CODE STARTS HERE
 
 }
 
+.hidden{
+
+  border: 5px solid #64147a;
+
+  border-radius: 10px;
+
+  background-color:#ecddf5;
+
+}
+
+
 
 
 .pageTitle{
 
-  font-weight:bold;
-
+  flex: 1 auto;
+  width: 50%;
+  margin-top:30px;
+  margin:15px;
+  padding: 20px;
+  border: 3px solid #64147a;
+  border-radius: 5px;
+  background-color:#ecddf5;
   font-size: 50px;
-
   text-align:center;
-
-  padding:20px;
+//  vertical-align:center;
+  justify-content: center;
 
 }
 
@@ -293,7 +309,7 @@ TALIA'S CODE STARTS HERE
   border: 3px solid #64147a;
   border-radius: 5px;
   font-weight:bold;
-  background-color:#eaeaea;
+  background-color:#ecddf5;
 
 }
 
@@ -317,7 +333,7 @@ TALIA'S CODE STARTS HERE
     right:95px;
     font-size: 14px;
     border:2px solid #64147a;
-    background: #eaeaea;
+    background: #ecddf5;
     padding: 20px;
     cursor: pointer;
 }
@@ -377,7 +393,7 @@ TALIA'S CODE STARTS HERE
 
   font-weight:bold;
 
-  background-color:#eaeaea;
+  background-color:#ecddf5;
 
 }
 
@@ -386,12 +402,18 @@ TALIA'S CODE STARTS HERE
 
 .Ingredients-Label{
 
+   font-size: 25px;
+  flex: 1 auto;
+  width:100%;
+  margin-top:30px;
+  margin:15px;
+  padding: 20px;
+  border: 3px solid #64147a;
+  border-radius: 5px;
   font-weight:bold;
-
-  font-size:30px;
-
+  background-color:#ecddf5;
+  font-weight:bold;
 //  margin-left: 400px;
-
   padding:20px;
 
 }
@@ -408,7 +430,7 @@ TALIA'S CODE STARTS HERE
   border: 3px solid #64147a;
   border-radius: 5px;
   font-weight:bold;
-  background-color:#eaeaea;
+  background-color:#ecddf5;
 }
 
 .description{
@@ -417,6 +439,7 @@ TALIA'S CODE STARTS HERE
   padding:10px;
   font-size:15px;
  }
+
 
 
 /*HEADER CSS*/
