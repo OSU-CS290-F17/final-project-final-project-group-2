@@ -628,7 +628,7 @@ h1 {
 .filter-input-box{
    height: 20px;
   display: flex;
-  flex: 1 auto;
+#  flex: 1 auto;
 
 }
 .search-button{
@@ -675,5 +675,21 @@ h1 {
 .Error-pic-Container{
   width:700px;
   height:700px;
+}
+
+#modal.cancelButton{
+	display:block;
+	position: fixed;
+	right: 10px;
+	bottom:15px;
+	width:50px;
+}
+
+#modal.nextButton{
+	display:block;
+	position: fixed;
+	right: 75px;
+	bottom:15px;
+	width:50px;
 }
 
