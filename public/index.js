@@ -104,7 +104,7 @@ function saveData(){
 			alert("Error storing cake in database:\n\n\n" + event.target.response);
 		} else {
 			var newPost = createPost(type, diet, servingSize[0].value, prepTime[0].value, cookTime[0].value, URL[0].value, Id);
-      var postsContainer = document.querySelector('.posts');
+      var postsContainer = document.querySelector('#posts');
       postsContainer.insertAdjacentHTML('beforeend', newPost);
 		}
 	});
