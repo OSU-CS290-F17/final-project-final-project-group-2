@@ -1,4 +1,4 @@
-function createPost(type, dietaryTag, serves, prepTime, cookTime, photoURL) {
+function createPost(type, dietaryTag, serves, prepTime, cookTime, photoURL, cakeId) {
 
   var cakeTemplateArgs = {
     type: type,
@@ -6,7 +6,8 @@ function createPost(type, dietaryTag, serves, prepTime, cookTime, photoURL) {
 		serves: serves,
 		prepTime: prepTime,
 		cookTime: cookTime,
-		photoURL: photoURL
+		photoURL: photoURL,
+    cakeId: cakeId
   };
 
 	console.log(cakeTemplateArgs);
@@ -105,7 +106,7 @@ function saveData(){
 		if (event.target.status !== 200){
 			alert("Error storing cake in database:\n\n\n" + event.target.response);
 		} else {
-			var newPost = createPost(type, diet, servingSize[0].value, prepTime[0].value, cookTime[0].value, URL[0].value);
+			var newPost = createPost(type, diet, servingSize[0].value, prepTime[0].value, cookTime[0].value, URL[0].value, Id);
       var postsContainer = document.querySelector('.posts');
 
       postsContainer.insertAdjacentHTML('beforeend', newPost);
@@ -189,7 +190,7 @@ filterBoxSearch.addEventListener('click', function filter(){
 	}
 	//hide posts based on filters
 	for (var i = 0; i < allPosts.length; i++){
-		
+
 		if (cakeType){
 			if (allPosts[i].getAttribute("cake-type").toLowerCase() !== cakeType.toLowerCase()){
 				allPosts[i].style.display = "none";
@@ -234,14 +235,9 @@ filterBoxSearch.addEventListener('click', function filter(){
 
 });
 
-function openModal(){
-	console.log('testing');
-}
-
 for(var i = 0; i < allPosts.length; i++){
 	if(allPosts[i]){
-		allPosts[i].addEventListener('click', openModal);
+		allPosts[i].addEventListener('click', openCakeModal);
+
 	}
 }
-
-
