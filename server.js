@@ -155,6 +155,42 @@ app.post('/addCake', function (req, res, next){
   }
 });
 
+/*app.post('/addCakeToCart', function (req, res, next){
+
+  console.log("\n\n\nIN CART POST FN\n\n\n");
+  if (req.body) {
+    var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
+
+    cakeDataCollection.find({cakeId: req.params.cakeId}).toArray(function(err, results){
+      if(err){
+         res.status(500).send("Error fetching cake Data from DB.");
+      }else if (results.length > 0){
+         console.log("== query results:", results);
+          //res.status(200).render('modalPage', results[0]);
+      }
+      else{
+        next();
+      }
+    }
+
+    var cakeCartDataCollection = mongoConnection.collection('cakeCart');
+
+    cakeCartDataCollection.insertOne(
+      results[0],
+      function (err, result) {
+        if (err) {
+          res.status(500).send("Error fetching cakes from DB");
+        } else {
+          console.log("success");
+          res.status(200).send("Success");
+        }
+      }
+    );
+  } else {
+    res.status(400).send("Request body needs to exist");
+  }
+});*/
+
 
  MongoClient.connect(mongoURL, function(err, connection){
  	if(err){
