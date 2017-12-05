@@ -19,7 +19,9 @@
 
   </section>
   
-  <button class="add-cake-homepage-button" id = "addCake">Add Cake</button>
+  {{#unless cartTrue}}
+    <button class="add-cake-homepage-button" id = "addCake">Add Cake</button>
+  {{/unless}}
   
   {{> addPage1}}
 </main>
