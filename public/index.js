@@ -10,8 +10,6 @@ function createPost(type, dietaryTag, serves, prepTime, cookTime, photoURL, cake
     cakeId: cakeId
   };
 
-	console.log(cakeTemplateArgs);
-
   var cakePostHTML = Handlebars.templates.cakePost(cakeTemplateArgs);
 
   return cakePostHTML;
@@ -34,7 +32,6 @@ window.addEventListener('DOMContentLoaded',function(){
 
 var postButton = document.getElementsByClassName('nextButton');
 if(postButton[0]){
-	console.log(postButton[0]);
 	var post = postButton[0].addEventListener('click', saveData);
 }
 
@@ -102,13 +99,11 @@ function saveData(){
 	postRequest.setRequestHeader('Content-Type', 'application/json');
 
 	postRequest.addEventListener('load', function(event){
-		//console.log(event.target.status);
 		if (event.target.status !== 200){
 			alert("Error storing cake in database:\n\n\n" + event.target.response);
 		} else {
 			var newPost = createPost(type, diet, servingSize[0].value, prepTime[0].value, cookTime[0].value, URL[0].value, Id);
       var postsContainer = document.querySelector('.posts');
-
       postsContainer.insertAdjacentHTML('beforeend', newPost);
 		}
 	});
@@ -118,10 +113,8 @@ function saveData(){
 }
 
 var addToCartButton = document.getElementsByClassName('cart-button');
-//console.log(addToCartButton);
 for (var i = 0; i < addToCartButton.length; i++){
   if (addToCartButton[i]){
-    //console.log("in if button");
     addToCartButton[i].addEventListener('click', saveCartData);
   }
 }
@@ -129,7 +122,6 @@ for (var i = 0; i < addToCartButton.length; i++){
 
 function saveCartData(){
 
-  //console.log("In fucntion");
 	var postRequest = new XMLHttpRequest();
 	var postURL = "/addCakeToCart";
 	postRequest.open('POST', postURL);
@@ -137,38 +129,19 @@ function saveCartData(){
   cakeId = event.target.className.split(" ")[1];
   photoURL =  event.target.className.split(" ")[2];
 
-  console.log(cakeId);
-  console.log(photoURL);
-
   var cakeCartObj = {
     photoURL: photoURL,
     cakeId: cakeId
   };
 
-  //console.log("Temp Arg", cakeTemplateArgs);
-
-  //var cakePostHTML = Handlebars.templates.cakePost(cakeTemplateArgs);
-
-  //return cakePostHTML;
-
-
-
 	var requestBody = JSON.stringify(cakeCartObj);
 
 	postRequest.setRequestHeader('Content-Type', 'application/json');
-
 	postRequest.addEventListener('load', function(event){
-		//console.log(event.target.status);
 		if (event.target.status !== 200){
 			alert("Error storing cake in cart database:\n\n\n" + event.target.response);
-		} else {
-			//var newPost = createPost(type, diet, servingSize[0].value, prepTime[0].value, cookTime[0].value, URL[0].value, Id);
-      //var postsContainer = document.querySelector('.posts');
-
-      //postsContainer.insertAdjacentHTML('beforeend', newPost);
 		}
 	});
-
 	postRequest.send(requestBody);
 }
 
@@ -181,11 +154,12 @@ function closeModal(){
 	cookTime[0].value = '0 minutes';
 	dietaryTag[0].value = 'None';
 	directions[0].value = '';
-	// for(var k = 0; k < i; k++){
-	// 	quantity[i].firstChild.nextElementSibling.value = '';
-	// 	unit[i].firstChild.nextElementSibling.value = 'None';
-	// 	name[i].firstChild.nextElementSibling.value = '';
-	// }
+  var name = document.getElementsByClassName("nameBox");
+	 for(var k = 0; k < i; k++){
+	 	quantity[k].firstChild.nextElementSibling.value = '';
+	 	unit[k].firstChild.nextElementSibling.value = 'None';
+	 	name[k].firstChild.nextElementSibling.value = '';
+	 }
 	var background = document.getElementById('modal-background');
 	var modal = document.getElementById('post-modal');
 	background.classList.add('hidden');

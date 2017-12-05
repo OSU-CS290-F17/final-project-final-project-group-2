@@ -57,7 +57,6 @@
 
  app.get('/recipe/:cakeId', function(req, res, next) {
     var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
-    console.log("cakeId: ", req.params.cakeId);
     cakeDataCollection.find({cakeId: req.params.cakeId}).toArray(function(err, results){
     	if(err){
  		     res.status(500).send("Error fetching cake Data from DB.");
@@ -73,7 +72,6 @@
 
  app.get('/modal/:cakeId', function(req, res, next) {
     var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
-    console.log("cakeId: ", req.params.cakeId);
     cakeDataCollection.find({cakeId: req.params.cakeId}).toArray(function(err, results){
     	if(err){
  		     res.status(500).send("Error fetching cake Data from DB.");
@@ -87,45 +85,11 @@
     });
  });
 
- /*
- app.get('/modal', function(req, res, next) {
-   res.status(200).render('modalPage');
- });
-
-
-
- app.get('/cakecart', function(req, res, next) {
-   res.status(200).render('cakeCart');
- });
-*/
-
-//app.get('/addcake', function(req, res, next) {
-//   res.status(200).render('addPage1');
-// });
-
-// app.get('/addcakeingredients', function(req, res, next) {
-//   res.status(200).render('addPage2');
-// });
-
-// app.get('/addcakedirections', function(req, res, next) {
-//   res.status(200).render('addPage3');
-// });
-
-// app.get('/addcakereview', function(req, res, next) {
-//   res.status(200).render('addPage3');
-// });
-
-// app.get('/recipe', function(req, res, next) {
-//   res.status(200).render('recipePage');
-// });
-
  app.get('*', function (req, res) {
    res.status(404).render('404');
  });
 
 app.post('/addCake', function (req, res, next){
-
-  console.log("\n\n\nIN POST FN\n\n\n");
   if (req.body && req.body.title) {
     var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
 
@@ -146,7 +110,6 @@ app.post('/addCake', function (req, res, next){
         if (err) {
           res.status(500).send("Error fetching cakes from DB");
         } else {
-          console.log("success");
           res.status(200).send("Success");
         }
       }
@@ -158,7 +121,6 @@ app.post('/addCake', function (req, res, next){
 });
 
 app.post('/addCakeToCart', function (req, res, next){
-  console.log("\n\n\nIN CART POST FN\n\n\n");
   if (req.body && req.body.cakeId) {
     var cakeDataCollection = mongoConnection.collection('cakeCart');
 
@@ -171,7 +133,6 @@ app.post('/addCakeToCart', function (req, res, next){
         if (err) {
           res.status(500).send("Error fetching cakes from DB");
         } else {
-          console.log("success");
           res.status(200).send("Success");
         }
       }
