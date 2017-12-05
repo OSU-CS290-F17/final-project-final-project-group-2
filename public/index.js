@@ -26,7 +26,6 @@ window.addEventListener('DOMContentLoaded',function(){
 	var addPost = document.getElementById('addCake');
 	if(addPost){
 		addPost.addEventListener('click', addAPost);
-		console.log("add a cake");
 	}
 
 
@@ -34,41 +33,36 @@ window.addEventListener('DOMContentLoaded',function(){
 
 var postButton = document.getElementsByClassName('nextButton');
 if(postButton){
+	console.log(postButton);
 	var post = postButton[0].addEventListener('click', saveData);
-	console.log("post");
 }
 
 var cancelButton = document.getElementsByClassName('cancelButton');
 if(cancelButton){
-		console.log("cancel");
 	cancelButton[0].addEventListener('click', closeModal);
 
-}
+};
+
+var Title = document.getElementsByClassName('add-title-input');//Title[0].value
+var URL = document.getElementsByClassName('add-URL-input');//URL[0].value
+var flavorTag = document.getElementsByClassName('flavor-tags');//flavorTag[0].value
+var servingSize = document.getElementsByClassName('serving-size');//servingSize[0].value
+var prepTime = document.getElementsByClassName('prep-Time');//prepTime[0].value
+var cookTime = document.getElementsByClassName('cook-Time');//cookTime[0].value
+var dietaryTag = document.getElementsByClassName('dietary-tags');//dietaryTag[0].value
+var directions = document.getElementsByClassName('description');
+var i = 0;
+var quantityclass = "quantity-boxes";
+var unitclass = "unit-boxes";
+var nameclass = "nameBox";
+var unit = document.getElementsByClassName(unitclass);
+var name = document.getElementsByClassName(nameclass);
+var quantity = document.getElementsByClassName(quantityclass);
 
 function saveData(){
-	console.log('in saveData');
-	var Title = document.getElementsByClassName('add-title-input');//Title[0].value
-	var URL = document.getElementsByClassName('add-URL-input');//URL[0].value
-	var flavorTag = document.getElementsByClassName('flavor-tags');//flavorTag[0].value
-	var servingSize = document.getElementsByClassName('serving-size');//servingSize[0].value
-	var prepTime = document.getElementsByClassName('prep-Time');//prepTime[0].value
-	var cookTime = document.getElementsByClassName('cook-Time');//cookTime[0].value
-	var dietaryTag = document.getElementsByClassName('dietary-tags');//dietaryTag[0].value
-	var directions = document.getElementsByClassName('description');
-	var quantity, unit, name, quantityclass, unitclass, nameclass;
-
 	var postRequest = new XMLHttpRequest();
 	var postURL = "/addCake";
 	postRequest.open('POST', postURL);
-
-
-	var i = 0;
-	quantityclass = "quantity-boxes";
-	unitclass = "unit-boxes";
-	nameclass = "nameBox";
-	unit = document.getElementsByClassName(unitclass);
-	name = document.getElementsByClassName(nameclass);
-	quantity = document.getElementsByClassName(quantityclass);
 	var ingredients = '';
 	var object;
 	var ingredientsArray = [];
@@ -78,7 +72,7 @@ function saveData(){
 			ingredientItem: ingredients,
 		}
 		ingredientsArray[i] = object;
-		i = i + 1;
+		i = i + 1;//i at the end will be how many ingredients are filled in.
 	}
 
 	var Id = Title[0].value.split(' ').join('');
@@ -125,7 +119,19 @@ function saveData(){
 
 
 function closeModal(){
-	console.log("Close Modal")
+	Title[0].value = '';
+	URL[0].value = '';
+	flavorTag[0].value = 'Other';
+	servingSize[0].value = '1';
+	prepTime[0].value = '0 minutes';
+	cookTime[0].value = '0 minutes';
+	dietaryTag[0].value = 'None';
+	directions[0].value = '';
+	// for(var k = 0; k < i; k++){
+	// 	quantity[i].firstChild.nextElementSibling.value = '';
+	// 	unit[i].firstChild.nextElementSibling.value = 'None';
+	// 	name[i].firstChild.nextElementSibling.value = '';
+	// }
 	var background = document.getElementById('modal-background');
 	var modal = document.getElementById('post-modal');
 	background.classList.add('hidden');
@@ -146,6 +152,8 @@ function addAPost(){
 }
 
 var filterBoxSearch = document.getElementById('filter-search-button');
+//read in all posts info
+var allPosts = document.getElementsByClassName('cake-post-container');
 
 filterBoxSearch.addEventListener('click', function filter(){
 	console.log("Search!");
@@ -173,8 +181,7 @@ filterBoxSearch.addEventListener('click', function filter(){
 		dietaryTag = "none";
 	}
 
-	//read in all posts info
-  var allPosts = document.getElementsByClassName('cake-post-container');
+
 
 	//show all posts
 	for (var i = 0; i < allPosts.length; i++){
@@ -226,3 +233,15 @@ filterBoxSearch.addEventListener('click', function filter(){
 	}
 
 });
+
+function openModal(){
+	console.log('testing');
+}
+
+for(var i = 0; i < allPosts.length; i++){
+	if(allPosts[i]){
+		allPosts[i].addEventListener('click', openModal);
+	}
+}
+
+
