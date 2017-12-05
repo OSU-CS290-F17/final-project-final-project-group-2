@@ -36,6 +36,7 @@
  app.use(express.static('public'));
 
  app.get('/cakecart', function(req, res, next) {
+    var cart = true;
     var cakeDataCollection = mongoConnection.collection('cakeCart');
     cakeDataCollection.find({}).toArray(function(err, results){
     	if(err){
@@ -43,7 +44,8 @@
  	    }else{
  		     console.log("== query results:", results);
  		      res.status(200).render('homePage',{
- 			        cakesArray: results
+ 			        cakesArray: results,
+              cartTrue: cart
  		      });
  	    }
     });
@@ -155,28 +157,16 @@ app.post('/addCake', function (req, res, next){
   }
 });
 
-/*app.post('/addCakeToCart', function (req, res, next){
-
+app.post('/addCakeToCart', function (req, res, next){
   console.log("\n\n\nIN CART POST FN\n\n\n");
-  if (req.body) {
-    var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
+  if (req.body && req.body.cakeId) {
+    var cakeDataCollection = mongoConnection.collection('cakeCart');
 
-    cakeDataCollection.find({cakeId: req.params.cakeId}).toArray(function(err, results){
-      if(err){
-         res.status(500).send("Error fetching cake Data from DB.");
-      }else if (results.length > 0){
-         console.log("== query results:", results);
-          //res.status(200).render('modalPage', results[0]);
-      }
-      else{
-        next();
-      }
-    }
-
-    var cakeCartDataCollection = mongoConnection.collection('cakeCart');
-
-    cakeCartDataCollection.insertOne(
-      results[0],
+    cakeDataCollection.insertOne(
+      {
+        cakeId: req.body.cakeId,
+        photoURL: req.body.photoURL
+      },
       function (err, result) {
         if (err) {
           res.status(500).send("Error fetching cakes from DB");
@@ -186,10 +176,11 @@ app.post('/addCake', function (req, res, next){
         }
       }
     );
+
   } else {
-    res.status(400).send("Request body needs to exist");
+    res.status(400).send("Request body needs a `cakeId` field.");
   }
-});*/
+});
 
 
  MongoClient.connect(mongoURL, function(err, connection){

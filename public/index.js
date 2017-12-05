@@ -127,7 +127,7 @@ for (var i = 0; i < addToCartButton.length; i++){
 }
 
 
-/*function saveCartData(){
+function saveCartData(){
 
   //console.log("In fucntion");
 	var postRequest = new XMLHttpRequest();
@@ -135,10 +135,25 @@ for (var i = 0; i < addToCartButton.length; i++){
 	postRequest.open('POST', postURL);
 
   cakeId = event.target.className.split(" ")[1];
+  photoURL =  event.target.className.split(" ")[2];
 
-  //console.log(cakeId);
+  console.log(cakeId);
+  console.log(photoURL);
 
-	var requestBody = JSON.stringify(cakeId);
+  var cakeCartObj = {
+    photoURL: photoURL,
+    cakeId: cakeId
+  };
+
+  //console.log("Temp Arg", cakeTemplateArgs);
+
+  //var cakePostHTML = Handlebars.templates.cakePost(cakeTemplateArgs);
+
+  //return cakePostHTML;
+
+
+
+	var requestBody = JSON.stringify(cakeCartObj);
 
 	postRequest.setRequestHeader('Content-Type', 'application/json');
 
@@ -155,7 +170,7 @@ for (var i = 0; i < addToCartButton.length; i++){
 	});
 
 	postRequest.send(requestBody);
-}*/
+}
 
 function closeModal(){
 	Title[0].value = '';
