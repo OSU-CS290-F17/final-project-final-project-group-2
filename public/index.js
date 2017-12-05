@@ -1,43 +1,14 @@
-function createPost(type, dietaryTag, serves, prepTime, cookTime, photoURL, cakeId) {
+//definition of vars
 
-  var cakeTemplateArgs = {
-    type: type,
-		dietaryTag: dietaryTag,
-		serves: serves,
-		prepTime: prepTime,
-		cookTime: cookTime,
-		photoURL: photoURL,
-    cakeId: cakeId
-  };
-
-	console.log(cakeTemplateArgs);
-
-  var cakePostHTML = Handlebars.templates.cakePost(cakeTemplateArgs);
-
-  return cakePostHTML;
-
-}
-
-window.addEventListener('DOMContentLoaded',function(){
-	var addIngredient = document.getElementById('add-ingredient');
-	if(addIngredient){
-		addIngredient.addEventListener('click', addAnIngredient);
-	}
-
-	var addPost = document.getElementById('addCake');
-	if(addPost){
-		addPost.addEventListener('click', addAPost);
-	}
-
-
-});
+var filterBoxSearch = document.getElementById('filter-search-button');
+//read in all posts info
+var allPosts = document.getElementsByClassName('cake-post-container');
 
 var postButton = document.getElementsByClassName('nextButton');
 if(postButton){
 	console.log(postButton);
 	var post = postButton[0].addEventListener('click', saveData);
 }
-
 var cancelButton = document.getElementsByClassName('cancelButton');
 if(cancelButton){
 	cancelButton[0].addEventListener('click', closeModal);
@@ -59,6 +30,41 @@ var nameclass = "nameBox";
 var unit = document.getElementsByClassName(unitclass);
 var name = document.getElementsByClassName(nameclass);
 var quantity = document.getElementsByClassName(quantityclass);
+
+
+window.addEventListener('DOMContentLoaded',function(){
+	var addIngredient = document.getElementById('add-ingredient');
+	if(addIngredient){
+		addIngredient.addEventListener('click', addAnIngredient);
+	}
+
+	var addPost = document.getElementById('addCake');
+	if(addPost){
+		addPost.addEventListener('click', addAPost);
+	}
+
+
+});
+
+function createPost(type, dietaryTag, serves, prepTime, cookTime, photoURL, cakeId) {
+
+  var cakeTemplateArgs = {
+    type: type,
+		dietaryTag: dietaryTag,
+		serves: serves,
+		prepTime: prepTime,
+		cookTime: cookTime,
+		photoURL: photoURL,
+    cakeId: cakeId
+  };
+
+	console.log(cakeTemplateArgs);
+
+  var cakePostHTML = Handlebars.templates.cakePost(cakeTemplateArgs);
+
+  return cakePostHTML;
+
+}
 
 function saveData(){
 	var postRequest = new XMLHttpRequest();
@@ -128,11 +134,12 @@ function closeModal(){
 	cookTime[0].value = '0 minutes';
 	dietaryTag[0].value = 'None';
 	directions[0].value = '';
-	// for(var k = 0; k < i; k++){
-	// 	quantity[i].firstChild.nextElementSibling.value = '';
-	// 	unit[i].firstChild.nextElementSibling.value = 'None';
-	// 	name[i].firstChild.nextElementSibling.value = '';
-	// }
+	var name = document.getElementsByClassName('nameBox');
+	for(var k = 0; k < i; k++){
+		quantity[i].firstChild.nextElementSibling.value = '';
+		unit[i].firstChild.nextElementSibling.value = 'None';
+		name[i].firstChild.nextElementSibling.value = '';
+	}
 	var background = document.getElementById('modal-background');
 	var modal = document.getElementById('post-modal');
 	background.classList.add('hidden');
@@ -151,10 +158,6 @@ function addAPost(){
 	modal.classList.remove('hidden');
 	console.log("addapost")
 }
-
-var filterBoxSearch = document.getElementById('filter-search-button');
-//read in all posts info
-var allPosts = document.getElementsByClassName('cake-post-container');
 
 filterBoxSearch.addEventListener('click', function filter(){
 	console.log("Search!");
@@ -234,10 +237,3 @@ filterBoxSearch.addEventListener('click', function filter(){
 	}
 
 });
-
-for(var i = 0; i < allPosts.length; i++){
-	if(allPosts[i]){
-		allPosts[i].addEventListener('click', openCakeModal);
-
-	}
-}
