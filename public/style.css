@@ -15,7 +15,7 @@ margin: 0;
 
 a {
   text-decoration: none;
-  color: #f67811;
+  color: black;
 }
 
 a:hover {
@@ -398,7 +398,7 @@ TALIA'S CODE STARTS HERE
 
 /*HEADER CSS*/
 header{
-   backround-color: #ecddf5;
+   background-color: #ecddf5;
    width: 100%;
    align-items: center;
    display: flex;
