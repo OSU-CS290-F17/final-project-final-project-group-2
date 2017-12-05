@@ -1,15 +1,21 @@
-/*function createCakePost(photoURL, caption) {
+function createPost(type, dietaryTag, serves, prepTime, cookTime, photoURL) {
 
-  var photoCardTemplateArgs = {
-    photoURL: photoURL,
-    caption: caption
+  var cakeTemplateArgs = {
+    type: type,
+		dietaryTag: dietaryTag,
+		serves: serves,
+		prepTime: prepTime,
+		cookTime: cookTime,
+		photoURL: photoURL
   };
 
-  var photoCardHTML = Handlebars.templates.photoCard(photoCardTemplateArgs);
+	console.log(cakeTemplateArgs);
 
-  return photoCardHTML;
+  var cakePostHTML = Handlebars.templates.cakePost(cakeTemplateArgs);
 
-}*/
+  return cakePostHTML;
+
+}
 
 window.addEventListener('DOMContentLoaded',function(){
 	var addIngredient = document.getElementById('add-ingredient');
@@ -20,18 +26,23 @@ window.addEventListener('DOMContentLoaded',function(){
 	var addPost = document.getElementById('addCake');
 	if(addPost){
 		addPost.addEventListener('click', addAPost);
+		console.log("add a cake");
 	}
+
+
 });
 
-var PostButton = document.getElementsByClassName('nextButton');
-if(PostButton){
-	var post = PostButton.addEventListener('click', saveData);
-	console.log(post);
+var postButton = document.getElementsByClassName('nextButton');
+if(postButton){
+	var post = postButton[0].addEventListener('click', saveData);
+	console.log("post");
 }
 
 var cancelButton = document.getElementsByClassName('cancelButton');
 if(cancelButton){
+		console.log("cancel");
 	cancelButton[0].addEventListener('click', closeModal);
+
 }
 
 function saveData(){
@@ -45,6 +56,11 @@ function saveData(){
 	var dietaryTag = document.getElementsByClassName('dietary-tags');//dietaryTag[0].value
 	var directions = document.getElementsByClassName('description');
 	var quantity, unit, name, quantityclass, unitclass, nameclass;
+
+	var postRequest = new XMLHttpRequest();
+	var postURL = "/addCake";
+	postRequest.open('POST', postURL);
+
 
 	var i = 0;
 	quantityclass = "quantity-boxes";
@@ -67,32 +83,38 @@ function saveData(){
 
 	var Id = Title[0].value.split(' ').join('');
 	Id = Id.toLowerCase();
+
+	var diet = dietaryTag[0].value.split(' ').join('');
+	diet = diet.toLowerCase();
+
+	var type = flavorTag[0].value.toLowerCase();
+
 	var obj1 = {
 		title: Title[0].value,//cake id, type, dietarytag no spaces, lowercase...work on making this a modal
-		dietaryTag: dietaryTag[0].value,
+		dietaryTag: diet,
 		serves: servingSize[0].value,
 		prepTime: prepTime[0].value,
 		cookTime: cookTime[0].value,
-		type: flavorTag[0].value,
+		type: type,
 		photoURL: URL[0].value,
 		directions: directions[0].value,
 		cakeId: Id,
 		ingredients: ingredientsArray,
 	}
 
-	//Testing....
+	var requestBody = JSON.stringify(obj1);
 
-	var requestBody = JSON.stringify(photoObj);
 	postRequest.setRequestHeader('Content-Type', 'application/json');
 
 	postRequest.addEventListener('load', function(event){
+		//console.log(event.target.status);
 		if (event.target.status !== 200){
 			alert("Error storing cake in database:\n\n\n" + event.target.response);
 		} else {
-			//var newPhotoCard = createPhotoCard(photoURL, caption);
-      //var photoCardContainer = document.querySelector('.photo-card-container');
+			var newPost = createPost(type, diet, servingSize[0].value, prepTime[0].value, cookTime[0].value, URL[0].value);
+      var postsContainer = document.querySelector('.posts');
 
-      //photoCardContainer.insertAdjacentHTML('beforeend', newPhotoCard);
+      postsContainer.insertAdjacentHTML('beforeend', newPost);
 		}
 	});
 
@@ -103,6 +125,7 @@ function saveData(){
 
 
 function closeModal(){
+	console.log("Close Modal")
 	var background = document.getElementById('modal-background');
 	var modal = document.getElementById('post-modal');
 	background.classList.add('hidden');
@@ -119,6 +142,7 @@ function addAPost(){
 	var modal = document.getElementById('post-modal');
 	background.classList.remove('hidden');
 	modal.classList.remove('hidden');
+	console.log("addapost")
 }
 
 var filterBoxSearch = document.getElementById('filter-search-button');
@@ -149,16 +173,6 @@ filterBoxSearch.addEventListener('click', function filter(){
 		dietaryTag = "none";
 	}
 
-
-/*console.log("Caketype: ", cakeType);
-console.log("dietaryTag: ", dietaryTag);
-console.log("servesmin: ", servesMin);
-console.log("servesmax: ", servesMax);
-console.log("prepmin: ", prepMin);
-console.log("prepmax: ", prepMax);
-console.log("cookmin: ", cookMin);
-console.log("cookmax: ", cookMax);*/
-
 	//read in all posts info
   var allPosts = document.getElementsByClassName('cake-post-container');
 
@@ -168,14 +182,7 @@ console.log("cookmax: ", cookMax);*/
 	}
 	//hide posts based on filters
 	for (var i = 0; i < allPosts.length; i++){
-
-/*console.log("title: ", allPosts[i].getAttribute("cake-title"));
-console.log("type: ", allPosts[i].getAttribute("cake-type"));
-console.log("diet: ", allPosts[i].getAttribute("dietary-tag"));
-console.log("serves: ", allPosts[i].getAttribute("serves"));
-console.log("prep: ", allPosts[i].getAttribute("prep-time"));
-console.log("cook: ", allPosts[i].getAttribute("cook-time"));*/
-
+		
 		if (cakeType){
 			if (allPosts[i].getAttribute("cake-type").toLowerCase() !== cakeType.toLowerCase()){
 				allPosts[i].style.display = "none";

@@ -121,7 +121,52 @@
    res.status(404).render('404');
  });
 
-//app.post() How do I do this??
+app.post('/addCake', function (req, res, next){
+  console.log("\n\n\nIN POST FN\n\n\n");
+  if (req.body && req.body.title) {
+    var cakeDataCollection = mongoConnection.collection('cs290FinalProject');
+/*    var cakeObj = {
+      cakeId: req.body.cakeId,
+      type: req.body.type,
+      dietaryTag: req.body.dietaryTag,
+      serves: req.body.serves,
+      prepTime: req.body.prepTime,
+      cookTime: req.body.cookTime,
+      photoURL: req.body.photoURL,
+      directions: req.body.directions,
+      ingredients: req.body.ingredients,
+      title: req.body.title
+    };
+
+    console.log(cakeObj);*/
+
+    cakeDataCollection.insertOne(
+      {
+        cakeId: req.body.cakeId,
+        type: req.body.type,
+        dietaryTag: req.body.dietaryTag,
+        serves: req.body.serves,
+        prepTime: req.body.prepTime,
+        cookTime: req.body.cookTime,
+        photoURL: req.body.photoURL,
+        directions: req.body.directions,
+        ingredients: req.body.ingredients,
+        title: req.body.title
+      },
+      function (err, result) {
+        if (err) {
+          res.status(500).send("Error fetching cakes from DB");
+        } else {
+          console.log("success");
+          res.status(200).send("Success");
+        }
+      }
+    );
+
+  } else {
+    res.status(400).send("Request body needs a `title` field.");
+  }
+});
 
 
  MongoClient.connect(mongoURL, function(err, connection){
