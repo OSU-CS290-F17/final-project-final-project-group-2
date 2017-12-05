@@ -56,23 +56,7 @@ main{
 	flex-direction: column;
 }
 
-.filter-input-box{
-  display: flex;
-  max-width:220px;
-}
 
-.filter-input{
-  margin: 0px 0px 5px 5px;
-  height: 20px;
-  display: flex;
-  flex: 1 auto;
-	width: 25%;
-}
-.filter-input-box{
-  height: 20px;
-  display: flex;
-  flex: 1 auto;
-}
 
 /************************************
 AMANDA CSS STARTS HERE
@@ -501,4 +485,41 @@ header{
     font-size:25px;
   }
   
-  
+  /* FILTER */
+
+
+.filter-input-box{
+  display: flex;
+  max-width:220px;
+
+}
+
+
+
+.filter-input{
+  margin: 0px 0px 5px 5px;
+  height: 20px;
+  display: flex;
+  flex: 1 auto;
+	width: 25%;
+
+}
+
+.filter-input-box{
+   height: 20px;
+  display: flex;
+  flex: 1 auto;
+
+}
+.search-button{
+  font-weight:bold;
+  height: 40px;
+  font-size:23px;
+}
+
+.search-button a:hover{
+  font-weight:bold;
+  background-color: #64147a;
+
+}
+
