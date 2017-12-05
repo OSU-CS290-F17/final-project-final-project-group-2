@@ -628,7 +628,7 @@ h1 {
 .filter-input-box{
    height: 20px;
   display: flex;
-#  flex: 1 auto;
+ flex: 1 auto;
 
 }
 .search-button{
