@@ -56,6 +56,7 @@ var nameclass = "nameBox";
 var unit = document.getElementsByClassName(unitclass);
 var name = document.getElementsByClassName(nameclass);
 var quantity = document.getElementsByClassName(quantityclass);
+var numOfIngredients = 15;
 
 function saveData(){
 	var postRequest = new XMLHttpRequest();
@@ -155,7 +156,7 @@ function closeModal(){
 	dietaryTag[0].value = 'None';
 	directions[0].value = '';
   var name = document.getElementsByClassName("nameBox");
-	 for(var k = 0; k < i; k++){
+	 for(var k = 0; k < numOfIngredients; k++){
 	 	quantity[k].firstChild.nextElementSibling.value = '';
 	 	unit[k].firstChild.nextElementSibling.value = 'None';
 	 	name[k].firstChild.nextElementSibling.value = '';
