@@ -33,8 +33,14 @@ main{
 #posts{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	align: center;
+	margin: auto;
 }
-
+.cake-post-container{
+	display: inline-block;
+	vertical-align: top;
+}
 
 .cake-post-container img{
 	margin: 10px;
