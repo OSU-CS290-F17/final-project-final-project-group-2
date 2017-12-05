@@ -230,6 +230,7 @@ AMANDA CSS STARTS HERE
   font-size: 50px;
   font-family: "Brush Script Mt", sans-serif;
 }
+.modal-info-container,
 .cake-tag-container,
 .ingredient-list-container,
 .directions-container {
@@ -242,6 +243,7 @@ AMANDA CSS STARTS HERE
   border: 1px solid black;
   border-radius: 3px;
 }
+.modal-info-container h3,
 .cake-tag-container h3,
 .ingredient-list-container h3,
 .directions-container h3{
