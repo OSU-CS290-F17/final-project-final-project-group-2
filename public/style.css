@@ -7,6 +7,37 @@ Cream: rgb(254, 241, 232) #fef1e8
 Light Grey: rgb(234, 234, 234) #eaeaea
 Light Purple: rgb(236, 221, 245) #ecddf5
 */
+.add-cake-homepage-button{
+	background-color: #64147a;
+	height: 40px;
+	width: 120px;
+	color: #fef1e8;
+	font-size: 20px;
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+}
+
+//Error page
+.mainError{
+
+  border: 5px solid #64147a;
+  border-radius: 10px;
+  background-color:#ecddf5;
+  
+//  width: 400px;
+  text-align:center;
+  padding:30px;
+  
+  font-size:30px;
+  font-weight:bold;
+}
+
+
+.Error-pic-Container{
+  width:700px;
+  height:700px;
+}
 
 body {
 font-family: 'Nunito', sans-serif;
@@ -634,47 +665,7 @@ h1 {
 .search-button{
   font-weight:bold;
   height: 40px;
-  font-size:23px;
-}
-
-.search-button a:hover{
-  font-weight:bold;
-  background-color: #64147a;
-
-}
-
-//|| ADD NEW CAKE BUTTON||
-
-.add-cake-homepage-button{
-	background-color: #64147a;
-	height: 40px;
-	width: 120px;
-	color: #fef1e8;
-	font-size: 20px;
-	position: fixed;
-	right: 20px;
-	bottom: 10px;
-}
-
-//Error page
-.mainError{
-
-  border: 5px solid #64147a;
-  border-radius: 10px;
-  background-color:#ecddf5;
-  
-//  width: 400px;
-  text-align:center;
-  padding:30px;
-  
-  font-size:30px;
-  font-weight:bold;
-}
-
-
-.Error-pic-Container{
-  width:700px;
-  height:700px;
+  font-size: 23px;
 }
 
 #modal.cancelButton{
