@@ -286,30 +286,19 @@ AMANDA CSS STARTS HERE
 /****************************************************
 TALIA'S CODE STARTS HERE
 *****************************************************/
+
+/*
 /*Adding Pages*/
 
 .addModalContainer{
   border-radius: 10px;
-
   background-color:#eaeaea;
-
+  border: 4px solid #64147a;
+  width:50%
 }
-/*
-.hidden{
-
-  border: 5px solid #64147a;
-
-  border-radius: 10px;
-
-  background-color:#ecddf5;
-
-}
-*/
-
 
 
 .pageTitle{
-
   flex: 1 auto;
   width: 50%;
   margin-top:30px;
@@ -320,32 +309,24 @@ TALIA'S CODE STARTS HERE
   background-color:#ecddf5;
   font-size: 50px;
   text-align:center;
-//  vertical-align:center;
   justify-content: center;
-
 }
-
-
 
 .addPage_titles{
-  font-size: 25px;
-  flex: 1 auto;
-  width: 50%;
-  margin-top:30px;
-  margin:15px;
-  padding: 20px;
-  border: 3px solid #64147a;
-  border-radius: 5px;
-  font-weight:bold;
-  background-color:#ecddf5;
-
+  
+font-size: 30px;
+padding: 20px;
 }
+
+
 
 .add-title-input{
   width 50%;
   height:25px;
   padding:10px;
   font-size:15px;
+  
+ 
 }
 
 .add-URL-input{
@@ -354,6 +335,7 @@ TALIA'S CODE STARTS HERE
   padding:10px;
   font-size:15px;
 }
+
 
 
 #add-ingredient{
@@ -366,7 +348,6 @@ TALIA'S CODE STARTS HERE
     cursor: pointer;
 }
 
-
 .cancelButton{
     position: fixed;
     right: 10px;
@@ -376,7 +357,6 @@ TALIA'S CODE STARTS HERE
     padding: 10px;
     cursor: pointer;
 }
-
 
 .nextButton{
     position: fixed;
@@ -388,77 +368,21 @@ TALIA'S CODE STARTS HERE
     cursor: pointer;
 }
 
-.first-column{
-  width = 50%;
-  display:flex;
-}
-
-.second-column{
-  display: flex;
-  width:100%;
-}
-
-.third-column{
-  display: flex;
-  width:100%;
-}
-
-
-.fourth-column{
-  display: flex;
-  width:100%;
-}
-
 .ingredients-labels{
-  font-size: 25px;
-  flex: 1 auto;
-  width:50%;
-  margin-top:30px;
-  margin:15px;
-  padding: 20px;
-  border: 3px solid #64147a;
-  border-radius: 5px;
-
-  font-weight:bold;
-
-  background-color:#ecddf5;
-
+   font-size: 30px;
+padding:20px;
 }
-
-
 
 
 .Ingredients-Label{
-
-   font-size: 25px;
-  flex: 1 auto;
-  width:100%;
-  margin-top:30px;
-  margin:15px;
-  padding: 20px;
-  border: 3px solid #64147a;
-  border-radius: 5px;
-  font-weight:bold;
-  background-color:#ecddf5;
-  font-weight:bold;
-//  margin-left: 400px;
-  padding:20px;
-
+  
+font-size: 30px;
+padding:20px;
 }
 
-
-
 .descriptionClass{
-  font-size: 25px;
-  flex: 1 auto;
-  width:100%;
-  margin-top:30px;
-  margin:15px;
-  padding: 20px;
-  border: 3px solid #64147a;
-  border-radius: 5px;
-  font-weight:bold;
-  background-color:#ecddf5;
+  font-size: 30px;
+padding:20px;
 }
 
 .description{
@@ -467,8 +391,6 @@ TALIA'S CODE STARTS HERE
   padding:10px;
   font-size:15px;
  }
-
-
 
 /*HEADER CSS*/
 header{
