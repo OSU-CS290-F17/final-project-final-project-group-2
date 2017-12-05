@@ -248,46 +248,61 @@ AMANDA CSS STARTS HERE
 TALIA'S CODE STARTS HERE
 *****************************************************/
 /*Adding Pages*/
+
 .main{
+
   border: 5px solid #64147a;
+
   border-radius: 10px;
+
   background-color:#ecddf5;
+
 }
 
+
+
 .pageTitle{
+
   font-weight:bold;
+
   font-size: 50px;
+
   text-align:center;
+
   padding:20px;
+
 }
+
+
 
 .addPage_titles{
   font-size: 25px;
   flex: 1 auto;
   width: 50%;
- 
   margin-top:30px;
   margin:15px;
   padding: 20px;
-  border: 1px solid #64147a;
+  border: 3px solid #64147a;
   border-radius: 5px;
   font-weight:bold;
-  background-color:white;
+  background-color:#eaeaea;
+
 }
 
 .add-title-input{
-  width:650px;
+  width 50%;
   height:25px;
   padding:10px;
   font-size:15px;
 }
 
 .add-URL-input{
-   width:580px;
+   width:50%;
   height:25px;
   padding:10px;
   font-size:15px;
 }
+
 
 #add-ingredient{
     position:absolute;
@@ -301,7 +316,6 @@ TALIA'S CODE STARTS HERE
 
 
 .cancelButton{
- 
     position: fixed;
     right: 10px;
     font-size: 20px;
@@ -309,9 +323,6 @@ TALIA'S CODE STARTS HERE
     background: #eaeaea;
     padding: 10px;
     cursor: pointer;
-        
-    
-    
 }
 
 
@@ -340,11 +351,11 @@ TALIA'S CODE STARTS HERE
   width:100%;
 }
 
+
 .fourth-column{
   display: flex;
   width:100%;
 }
-
 
 .ingredients-labels{
   font-size: 25px;
@@ -353,47 +364,51 @@ TALIA'S CODE STARTS HERE
   margin-top:30px;
   margin:15px;
   padding: 20px;
-  border: 1px solid #64147a;
+  border: 3px solid #64147a;
   border-radius: 5px;
+
   font-weight:bold;
-  background-color:white;
+
+  background-color:#eaeaea;
+
 }
+
 
 
 
 .Ingredients-Label{
+
   font-weight:bold;
+
   font-size:30px;
+
 //  margin-left: 400px;
+
   padding:20px;
+
 }
 
+
+
 .descriptionClass{
-  
   font-size: 25px;
   flex: 1 auto;
   width:100%;
   margin-top:30px;
   margin:15px;
   padding: 20px;
-  border: 1px solid #64147a;
+  border: 3px solid #64147a;
   border-radius: 5px;
   font-weight:bold;
-  background-color:white;
+  background-color:#eaeaea;
 }
 
 .description{
-  width:800px;
+  width:50%;
   height:25px;
   padding:10px;
   font-size:15px;
  }
-
-.Description-label{
-
-}
-
-
 
 
 /*HEADER CSS*/
