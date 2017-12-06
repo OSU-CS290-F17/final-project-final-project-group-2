@@ -1,9 +1,4 @@
-
-
-
 <div id="modal-background" class="hidden"></div>
-
-
 
 <div id= "post-modal" class="hidden">
 
@@ -13,116 +8,33 @@
 
 </div>
 
-
-
-
-
-
 		<div class="addPage_titles">
-
-
-
 			<label class="add-title-label">Title</label>
-
-
-
 			<input type="text" name="add-title" class="add-title-input">
-
-
-
 		</div>
-
-
-
 		<div class="addPage_titles">
-
-
-
 			<label class="add-URL-label">Photo URL</label>
-
-
-
 			<input type="text" name="add-URL" class="add-URL-input">
-
-
-
 		</div>
-
-
-
-
 		<div class="addPage_titles">
-
-
-
 			<label class="add-serves-label">Serves</label>
-
-
-
 			<select class="serving-size">
-
-
-
 				<option value="1">1</option>
-
-
-
 				<option value="2">2</option>
-
-
-
 				<option value="3">3</option>
-
-
-
 				<option value="4">4</option>
-
-
-
 				<option value="5">5</option>
-
-
-
 				<option value="6">6</option>
-
-
-
 				<option value="7">7</option>
-
-
-
 				<option value="8">8</option>
-
-
-
 				<option value="9">9</option>
-
-
-
 				<option value="10">10</option>
-
-
-
 			</select>
-
-
-
 		</div>
-
-
-
 		<div class="addPage_titles">
-
-
 
 			<label class="add-prep-time-label">Prep Time</label>
-
-
-
 			<select class="prep-Time">
-
-
-
 				<option value="0">0 minutes</option>
 
 
@@ -540,34 +452,23 @@
 
 	<div id="ingredientsBox">
 
-<div class ="descriptionClass">
+    <div class ="descriptionClass">
 
-	<label class="Ingredients-Label">Ingredients</label>
+  	<label class="Ingredients-Label">Ingredients</label>
 
-		<label class="ingredients-labels">Quantity</label>
-		<label class="ingredients-labels">Unit</label>
-		<label class="ingredients-labels">Name</label>
+  		<label class="ingredients-labels">Quantity</label>
+  		<label class="ingredients-labels">Unit</label>
+  		<label class="ingredients-labels">Name</label>
 
+  	{{> ingredientsTemplate}}
 
+  	<label class="Description-label">Description</label>
+  	<input type="text" name="description" class="description">
 
-	{{> ingredientsTemplate}}
-
-
-	<label class="Description-label">Description</label>
-	<input type="text" name="description" class="description">
   </div>
+
 	<a href = '/'><button id="modal" type="button" class="nextButton">ADD</button></a>
 	<button id = "modal" type="button" class="cancelButton">X</button>
 </div>
-
-
-
-
-
-
-
-
-
-
 
 </div>

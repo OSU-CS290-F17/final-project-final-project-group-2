@@ -43,7 +43,7 @@ Light Purple: rgb(236, 221, 245) #ecddf5
   align: center;
   display: flex;
   margin: auto;
-  
+
 }
 
 .errorPictureContainer img{
@@ -304,14 +304,27 @@ TALIA'S CODE STARTS HERE
 .addModalContainer{
   border-radius: 10px;
   background-color:#eaeaea;
-  border: 4px solid #64147a;
+	background-color: white;
+	border: 4px solid #64147a;
   width:50%
+}
+
+#post-modal{
+	background-color: #fef1e8;
+	display: absolute;
+	right: 20%;
+	left: 20%;
+	top: 10%;
+	bottom: 10%;
+	border-radius: 10px;
+	border: 5px solid #fef1e8;
+	/*width: 50%;*/
+
 }
 
 
 .pageTitle{
   flex: 1 auto;
-  width: 50%;
   margin-top:30px;
   margin:15px;
   padding: 20px;
@@ -324,10 +337,9 @@ TALIA'S CODE STARTS HERE
 }
 
 .addPage_titles{
-  
-font-size: 30px;
-padding: 20px;
-background-color:white;
+	font-size: 30px;
+	padding: 20px;
+	/*background-color:white;*/
 }
 
 
@@ -337,14 +349,13 @@ background-color:white;
   height:25px;
   padding:10px;
   font-size:15px;
-  
- 
+
+
 }
 
 .add-URL-input{
    width:50%;
   height:25px;
-
 	padding:10px;
   font-size:15px;
 }
@@ -383,20 +394,19 @@ background-color:white;
 
 .ingredients-labels{
    font-size: 30px;
-padding:20px;
+	 padding:20px;
 }
 
 
 .Ingredients-Label{
-  
+
 font-size: 30px;
 padding:20px;
 }
 
 .descriptionClass{
   font-size: 30px;
-padding:20px;
-   background-color:white;
+	padding:20px;
 }
 
 .description{
@@ -545,13 +555,13 @@ h1 {
   max-width: 300px;
   border: 2px solid #eaeaea;
   border-radius: 50px;
-  
+
   }
-  
+
 
 
 .box{
-    
+
     background-color:#eaeaea;
     width:80%;
     border-radius: 20px;
@@ -561,7 +571,7 @@ h1 {
     text-align:center;
     font-size: 25px;
   }
-  
+
   .extra-info{
     text-align:center;
     font-size:18px;
@@ -569,7 +579,7 @@ h1 {
   .extra-info a{
     color: #64147a;
   }
-  
+
   /* FILTER */
 
 
@@ -604,16 +614,21 @@ h1 {
 #modal.cancelButton{
 	display:block;
 	position: fixed;
-	right: 10px;
-	bottom:15px;
+	right: 45px;
+	bottom:35px;
 	width:50px;
+	border-radius: 10px;
+	background-color: #fef1e8;
+	border: 1px solid #fef1e8;
 }
 
 #modal.nextButton{
 	display:block;
 	position: fixed;
-	right: 75px;
-	bottom:15px;
-	width:50px;
+	right: 120px;
+	bottom:35px;
+	width:75px;
+	border-radius: 10px;
+	background-color: #fef1e8;
+	border: 1px solid #fef1e8;
 }
-
