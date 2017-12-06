@@ -327,6 +327,7 @@ TALIA'S CODE STARTS HERE
   
 font-size: 30px;
 padding: 20px;
+background-color:white;
 }
 
 
@@ -343,7 +344,8 @@ padding: 20px;
 .add-URL-input{
    width:50%;
   height:25px;
-  padding:10px;
+
+	padding:10px;
   font-size:15px;
 }
 
@@ -394,6 +396,7 @@ padding:20px;
 .descriptionClass{
   font-size: 30px;
 padding:20px;
+   background-color:white;
 }
 
 .description{
