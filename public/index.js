@@ -180,53 +180,52 @@ if(filterBoxSearch){
   		dietaryTag = "none";
   	}
 
-
-
   	//show all posts
   	for (var i = 0; i < allPosts.length; i++){
-  		allPosts[i].style.display = "block"
+			allPosts[i].classList.remove('hidden')
   	}
   	//hide posts based on filters
   	for (var i = 0; i < allPosts.length; i++){
 
   		if (cakeType){
   			if (allPosts[i].getAttribute("cake-type").toLowerCase() !== cakeType.toLowerCase()){
-  				allPosts[i].style.display = "none";
+					allPosts[i].classList.add('hidden');
   			}
   		}
   		if (dietaryTag){
   			if (allPosts[i].getAttribute("dietary-tag") !== dietaryTag){
-  				allPosts[i].style.display = "none";
+					allPosts[i].classList.add('hidden');
   			}
   		}
   		if (servesMin){
   			if (parseInt(allPosts[i].getAttribute("serves")) < servesMin){
-  				allPosts[i].style.display = "none";
+					allPosts[i].classList.add('hidden');
   			}
   		}
   		if (servesMax){
   			if (parseInt(allPosts[i].getAttribute("serves")) > servesMax){
   				allPosts[i].style.display = "none";
+					allPosts[i].classList.add('hidden');
   			}
   		}
   		if (prepMin){
   			if (parseInt(allPosts[i].getAttribute("prep-time")) < prepMin){
-  				allPosts[i].style.display = "none";
+					allPosts[i].classList.add('hidden');
   			}
   		}
   		if (prepMax){
   			if (parseInt(allPosts[i].getAttribute("prep-time")) > prepMax){
-  				allPosts[i].style.display = "none";
+					allPosts[i].classList.add('hidden');
   			}
   		}
   		if (cookMin){
   			if (parseInt(allPosts[i].getAttribute("cook-time")) < cookMin){
-  				allPosts[i].style.display = "none";
+					allPosts[i].classList.add('hidden');
   			}
   		}
   		if (cookMax){
   			if (parseInt(allPosts[i].getAttribute("cook-time")) > cookMax){
-  				allPosts[i].style.display = "none";
+					allPosts[i].classList.add('hidden');
   			}
   		}
   	}
